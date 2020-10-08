@@ -1,0 +1,3 @@
+description=HP & MP base UI mod.
+requires=fantasycore
+game=flare-game

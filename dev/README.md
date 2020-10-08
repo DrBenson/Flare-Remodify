@@ -2,7 +2,7 @@
   This is re-modify engine of flare game engine.
 Most file are based on flare-engine source code.
 
-## Folder description.
+*** Folder description ***
 
 * Flare-Remodify ------------------> This project home.
 * ━━━┓
@@ -21,8 +21,8 @@ Most file are based on flare-engine source code.
 
 ## Links
 
-The following links are specific to the engine
+The following links are specific to the original engine
 
-* [Homepage](http://flarerpg.org)
-* [Source](https://github.com/flareteam/flare-engine)
-* [Forums](http://opengameart.org/forums/flare)
+* [Homepage](http://flarerpg.org) --> http://flarerpg.org
+* [Source](https://github.com/flareteam/flare-engine) ----> https://github.com/flareteam/flare-engine
+* [Forums](http://opengameart.org/forums/flare) ----> http://opengameart.org/forums/flare

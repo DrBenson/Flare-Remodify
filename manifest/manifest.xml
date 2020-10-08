@@ -9,9 +9,9 @@
            sync-j="4" />
 
   <project path="flare" name="flare-game" remote="flare-remodify" />
-  <project path="dev/item_generation" name="empyrean_itemdef" remote="flare" />
-  <project path="dev/map_traverse" name="flare_map_traverse" remote="flare" />
-  <project path="dev/map_tileset" name="tilesetdef-generator" remote="flare" />
-  <project path="dev/source" name="flare-engine" remote="flare-remidofy" />
-
+  <project path="dev/item_generation" name="dev/empyrean_itemdef" remote="flare" />
+  <project path="dev/map_traverse" name="dev/flare_map_traverse" remote="flare" />
+  <project path="dev/map_tileset" name="dev/tilesetdef-generator" remote="flare" />
+  <project path="dev/flare-engine" name="dev/flare-engine" remote="flare-remidofy" />
+  <priject path="flare/bin" name="flare/bin" remote="flare-remodify" />
 </manifest>

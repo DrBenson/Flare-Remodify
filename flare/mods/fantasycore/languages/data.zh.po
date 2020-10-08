@@ -1,24 +1,23 @@
-# Copyright (C) 2011 Clint Bellanger
 # This file is distributed under the same license as the FLARE package.
-# 
+#
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Translators:
-# Justin Jacobs <jajdorkster@gmail.com>, 2018
-# 杜茂森 <dumaosen_main01@outlook.com>, 2019
-# 
+# Justin Jacobs DrBenson <Benson.Dr@GMail.com>
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-29 09:45+\n"
-"PO-Revision-Date: 2018-03-28 19:34+0000\n"
-"Last-Translator: 杜茂森 <dumaosen_main01@outlook.com>, 2019\n"
+"PO-Revision-Date: 2020-10-07 02:06+0800\n"
+"Last-Translator: DrBenson <Benson.Dr@GMail.com>\n"
 "Language-Team: Chinese (https://www.transifex.com/flareorg/teams/84925/zh/)\n"
+"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../items/types.txt:5
 msgid "Main Hand"
@@ -30,11 +29,11 @@ msgstr "左手"
 
 #: ../items/types.txt:13
 msgid "Head"
-msgstr "头部"
+msgstr "頭部"
 
 #: ../items/types.txt:17
 msgid "Torso"
-msgstr "躯干"
+msgstr "軀幹"
 
 #: ../items/types.txt:21
 msgid "Hands"
@@ -50,7 +49,7 @@ msgstr "足部"
 
 #: ../items/types.txt:33
 msgid "Artifact"
-msgstr "饰物"
+msgstr "飾物"
 
 #: ../items/types.txt:37
 msgid "Ring"
@@ -62,15 +61,15 @@ msgstr "一次性物品"
 
 #: ../items/types.txt:47
 msgid "Gem"
-msgstr "宝石"
+msgstr "寶石"
 
 #: ../items/types.txt:51
 msgid "Key"
-msgstr "钥匙"
+msgstr "鑰匙"
 
 #: ../items/types.txt:55
 msgid "Book"
-msgstr "书"
+msgstr "書"
 
 #: ../items/qualities.txt:3
 msgid "Low"
@@ -86,7 +85,7 @@ msgstr "高"
 
 #: ../items/qualities.txt:21
 msgid "Epic"
-msgstr "史诗"
+msgstr "史詩"
 
 #: ../items/qualities.txt:27
 msgid "Rare"
@@ -94,7 +93,7 @@ msgstr "稀有"
 
 #: ../items/qualities.txt:33
 msgid "Unique"
-msgstr "独特"
+msgstr "獨特"
 
 #: ../items/qualities.txt:39
 msgid "One-time Use"
@@ -106,7 +105,7 @@ msgstr "流通"
 
 #: ../engine/loot.txt:14
 msgid "Gold"
-msgstr "金钱"
+msgstr "金幣"
 
 #: ../engine/hero_options.txt:7
 msgid "Delrek"
@@ -194,7 +193,7 @@ msgstr "Elise"
 
 #: ../engine/hero_options.txt:29
 msgid "River"
-msgstr "River"
+msgstr "河道"
 
 #: ../engine/hero_options.txt:30
 msgid "Nital"
@@ -250,11 +249,11 @@ msgstr "Sonia"
 
 #: ../engine/equip_flags.txt:5
 msgid "melee weapon"
-msgstr "近战武器"
+msgstr "近戰武器"
 
 #: ../engine/equip_flags.txt:9
 msgid "ranged weapon"
-msgstr "远程武器"
+msgstr "遠射武器"
 
 #: ../engine/equip_flags.txt:13
 msgid "mental weapon"
@@ -262,11 +261,11 @@ msgstr "魔法武器"
 
 #: ../engine/equip_flags.txt:17
 msgid "shield"
-msgstr "护盾"
+msgstr "盾牌"
 
 #: ../engine/equip_flags.txt:21
 msgid "slingshot"
-msgstr "弹弓"
+msgstr "彈弓"
 
 #: ../engine/equip_flags.txt:25
 msgid "bow"
@@ -274,31 +273,39 @@ msgstr "弓"
 
 #: ../soundfx/subtitles.txt:11
 msgid "Take a look around."
-msgstr "到附近看看。"
+msgstr "到附近看看."
 
 #: ../soundfx/subtitles.txt:15
 msgid "Looking to buy something?"
-msgstr "想去买点什么？"
+msgstr "想去買點什么?"
 
 #: ../soundfx/subtitles.txt:19
 msgid "How can I help you?"
-msgstr "请问您需要什么？"
+msgstr "請問您需要什么?"
 
 #: ../soundfx/subtitles.txt:23
 msgid "Let's trade."
-msgstr "做个交易吧。"
+msgstr "做個交易吧."
+
+#: ../cutscenes/intro.txt:7
+msgid="Flare, the Fantasycore Engine"
+msgstr="榮耀火炬(Flare) 夢幻核心遊戲引擎"
+
+#: ../cutscenes/intro.txt:10
+msgid="Free Libre Action Roleplaying Engine"
+msgstr="免費自由的動作角色扮演遊戲引擎"
 
 #: ../cutscenes/credits.txt:7
 msgid "Flare Game Credits - fantasycore"
-msgstr "Flare Game 鸣谢 - fantasycore"
+msgstr "榮耀火炬(Flare) 遊戲歸功於 - 夢幻核心遊戲引擎(fantasycore)"
 
 #: ../cutscenes/credits.txt:10
 msgid "Lead Visual Artists"
-msgstr "领衔视觉艺术家"
+msgstr "首席視訊效果處理"
 
 #: ../cutscenes/credits.txt:16
 msgid "Visual Artists"
-msgstr "视觉艺术家"
+msgstr "視訊效果處理"
 
 #: ../cutscenes/credits.txt:25
 msgid "Composers"
@@ -306,7 +313,7 @@ msgstr "作曲"
 
 #: ../cutscenes/credits.txt:31
 msgid "Foley Artists"
-msgstr "声音艺术家"
+msgstr "音效處理"
 
 #: ../cutscenes/credits.txt:38
 msgid "Voice Actors"
@@ -314,4 +321,154 @@ msgstr "配音"
 
 #: ../cutscenes/credits.txt:44
 msgid "Translators"
-msgstr "翻译者"
+msgstr "翻譯"
+
+#~ msgid "Clint Bellanger"
+#~ msgstr "Clint Bellanger"
+
+#~ msgid "Justin Nichol"
+#~ msgstr "Justin Nichol"
+
+#~ msgid "Blarumyrran"
+#~ msgstr "Blarumyrran"
+
+#~ msgid "Jessica Cox"
+#~ msgstr "Jessica Cox"
+
+#~ msgid "Sarah Benalene"
+#~ msgstr "Sarah Benalene"
+
+#~ msgid "Scrittl"
+#~ msgstr "Scrittl"
+
+#~ msgid "Stefan Beller"
+#~ msgstr "Stefan Beller"
+
+#~ msgid "Brandon Morris"
+#~ msgstr "Brandon Morris"
+
+#~ msgid "remaxim"
+#~ msgstr "remaxim"
+
+#~ msgid "Justin Jacobs"
+#~ msgstr "Justin Jacobs"
+
+#~ msgid "rubberduck"
+#~ msgstr "rubberduck"
+
+#~ msgid "Holly Daniel"
+#~ msgstr "Holly Daniel"
+
+#~ msgid "Adrian Chaves Fernandez"
+#~ msgstr "Adrian Chaves Fernandez"
+
+#~ msgid "Andrea Ranaldi"
+#~ msgstr "Andrea Ranaldi"
+
+#~ msgid "Andreas Berheim Brudin"
+#~ msgstr "Andreas Berheim Brudin"
+
+#~ msgid "Bas Doodeman"
+#~ msgstr "Bas Doodeman"
+
+#~ msgid "Bonbadil"
+#~ msgstr "Bonbadil"
+
+#~ msgid "Carlos Sanchez"
+#~ msgstr "Carlos Sanchez"
+
+#~ msgid "Chris Oelmueller"
+#~ msgstr "Chris Oelmueller"
+
+#~ msgid "Christoph J. Thompson"
+#~ msgstr "Christoph J. Thompson"
+
+#~ msgid "Diego J. Romero López"
+#~ msgstr "Diego J. Romero López"
+
+#~ msgid "dumaosen"
+#~ msgstr "dumaosen"
+
+#~ msgid "Eric R"
+#~ msgstr "Eric R"
+
+#~ msgid "Evgen Pavlov"
+#~ msgstr "Evgen Pavlov"
+
+#~ msgid "Giovanni Dalla Torre"
+#~ msgstr "Giovanni Dalla Torre"
+
+#~ msgid "GunChleoc"
+#~ msgstr "GunChleoc"
+
+#~ msgid "Hans Joachim Desserud"
+#~ msgstr "Hans Joachim Desserud"
+
+#~ msgid "hark34"
+#~ msgstr "hark34"
+
+#~ msgid "Igor Paliychuk"
+#~ msgstr "Igor Paliychuk"
+
+#~ msgid "Janet Hunt"
+#~ msgstr "Janet Hunt"
+
+#~ msgid "Juan Pablo Tamayo"
+#~ msgstr "Juan Pablo Tamayo"
+
+#~ msgid "Mikhail Karalevich"
+#~ msgstr "Mikhail Karalevich"
+
+#~ msgid "Miro Jánošík"
+#~ msgstr "Miro Jánošík"
+
+#~ msgid "Mykola Franchuk"
+#~ msgstr "Mykola Franchuk"
+
+#~ msgid "MOB2"
+#~ msgstr "MOB2"
+
+#~ msgid "Morgan Strauss"
+#~ msgstr "Morgan Strauss"
+
+#~ msgid "Nea Retrogamer"
+#~ msgstr "Nea Retrogamer"
+
+#~ msgid "Nikita Vanku"
+#~ msgstr "Nikita Vanku"
+
+#~ msgid "Paul Wortmann"
+#~ msgstr "Paul Wortmann"
+
+#~ msgid "Pawel Puszczynski"
+#~ msgstr "Pawel Puszczynski"
+
+#~ msgid "Quentin Stievenart"
+#~ msgstr "Quentin Stievenart"
+
+#~ msgid "Rui"
+#~ msgstr "Rui"
+
+#~ msgid "Sergey Basalaev"
+#~ msgstr "Sergey Basalaev"
+
+#~ msgid "Stefano Peris"
+#~ msgstr "Stefano Peris"
+
+#~ msgid "sujiniku"
+#~ msgstr "sujiniku"
+
+#~ msgid "Thomas Glamsch"
+#~ msgstr "Thomas Glamsch"
+
+#~ msgid "Timo Sievänen"
+#~ msgstr "Timo Sievänen"
+
+#~ msgid "Vicente Monteiro"
+#~ msgstr "Vicente Monteiro"
+
+#~ msgid "Wuzzy2"
+#~ msgstr "Wuzzy2"
+
+#~ msgid "Yannis Anthymidis"
+#~ msgstr "Yannis Anthymidis"

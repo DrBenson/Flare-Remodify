@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- From Flare game repositories -->
+  <remote  name="flare-remodify" fetch="https://github.com/DrBenson/Flare-Remodify/" />
+  <remote  name="flare" fetch="https://github.com/flareteam/" />
+  <default remote="flare-flare-remodify"
+           sync-c="true"
+           sync-j="4" />
+
+  <project path="flare" name="flare-game" remote="flare-remodify" />
+  <project path="dev/item_generation" name="empyrean_itemdef" remote="flare" />
+  <project path="dev/map_traverse" name="flare_map_traverse" remote="flare" />
+  <project path="dev/map_tileset" name="tilesetdef-generator" remote="flare" />
+  <project path="dev/source" name="flare-engine" remote="flare-remidofy" />
+
+</manifest>

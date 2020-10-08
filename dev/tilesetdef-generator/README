@@ -1,0 +1,20 @@
+# Flare Tileset Definition Generator
+
+This script allows for easy creation of a tileset definition for Flare (http://flarerpg.org) using an existing Tiled TMX file.
+
+
+
+## Usage
+
+Run this in the folder that contains your Tiled map and tileset images, replacing `FILENAME` with your map's filename:
+
+```
+./tilesetdef-generator.py FILENAME
+```
+
+
+
+## Notes
+
+* Partial tilesets named `collision` and `set_rules` are ignored
+

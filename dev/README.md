@@ -1,4 +1,3 @@
-
 **Flare** engind **_Remodify_** project.
 ```
 ┎──────────────────────────────────────┒
@@ -28,6 +27,10 @@ Flare-Remodify ------------------> This project home.
         ┣━ flare_map_traverse ---> Map drawer/traversal for flare-game
         ┗━ tilesetdef-generator -> Tool to convert tilesets embedded in a TMX to Flare's tileset format.
 ```
+
+# Flare-Remodify
+The Flare Game Re-Modify Based on Flare Fantasycore and Empyrean Campaign Engine.
+
 ## Links
 
 The following links are specific to the original engine

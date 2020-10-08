@@ -3,7 +3,7 @@
 # text_pos is optional. If omitted, text will be placed in the center.
 # orientation is either 0 (horizontal) or 1 (vertical)
 
-pos=0,-12,188,151
+pos=0,0,188,151
 bar_pos=0,0,188,151
 align=bottomleft
 orientation=1
@@ -11,4 +11,4 @@ orientation=1
 bar_gfx=images/menus/diablo_bar_hp.png
 bar_gfx_background=images/menus/diablo_bar_hp_bg.png
 
-text_pos=10,-170,left,top
+text_pos=50,-20,left,top

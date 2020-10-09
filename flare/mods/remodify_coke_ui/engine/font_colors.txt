@@ -3,7 +3,7 @@ menu_normal=255,255,255
 menu_bonus=128,255,128
 menu_penalty=255,128,128
 widget_normal=240,240,240
-widget_disabled=168,168,168
+widget_disabled=127,127,127
 
 # combat log
 combat_givedmg=255,255,255
@@ -20,7 +20,7 @@ item_flavor=190,180,170
 
 hardcore_color_name=255,128,128
 
-color_shadow=88,88,88
+color_shadow=128,128,128
 # hp, mp, xp text color
 color_hp=255,64,64,font_bold
 color_mp=64,128,255

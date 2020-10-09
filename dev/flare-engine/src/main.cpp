@@ -376,7 +376,7 @@ int main(int argc, char *argv[]) {
 			}
 		}
 		else if (arg == "version") {
-			Utils::logInfo("%s", VersionInfo::createVersionStringFull().c_str());
+			Utils::logInfo("%s", VersionInfo::createVersionStringFullText().c_str());
 			done = true;
 		}
 		else if (arg == "renderer") {

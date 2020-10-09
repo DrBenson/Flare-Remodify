@@ -52,6 +52,7 @@ namespace VersionInfo {
 
 	std::string createVersionReqString(Version& v1, Version& v2);
 	std::string createVersionStringFull();
+	std::string createVersionStringFullText();
 }
 
 #endif

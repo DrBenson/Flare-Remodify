@@ -151,5 +151,21 @@ std::string VersionInfo::createVersionStringFull() {
 	std::stringstream ss;
 	ss << NAME << ' ' << ENGINE.getString();
 	ss << " (" << SDL_GetPlatform() << ")";
+    ss << "\t       Remodify version: 1.1.0";
+    ss << "\t     This remodify based on Flare (Free Libre Action Roleplaying Engine).";
 	return ss.str();
 }
+std::string VersionInfo::createVersionStringFullText() {
+	// example output: Flare 1.0 (Linux)
+	std::stringstream ss;
+	ss << "\n         " << NAME << ' ' << ENGINE.getString();
+	ss << " (" << SDL_GetPlatform() << ")";
+    ss << "\n┎──────────────────────────────────────┒";
+    ss << "\n┃       Remodify version: 1.1.0        ┃";
+    ss << "\n┠──────────────────────────────────────┨";
+    ss << "\n┃     This remodify based on Flare     ┃";
+    ss << "\n┃(Free Libre Action Roleplaying Engine)┃";
+    ss << "\n┖──────────────────────────────────────┛";
+	return ss.str();
+}
+

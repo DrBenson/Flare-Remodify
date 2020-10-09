@@ -68,9 +68,16 @@ public:
 		COLOR_ITEM_BONUS = 13,
 		COLOR_ITEM_PENALTY = 14,
 		COLOR_ITEM_FLAVOR = 15,
-		COLOR_HARDCORE_NAME = 16
+		COLOR_HARDCORE_NAME = 16,
+		COLOR_HP = 17,
+        COLOR_MP = 18,
+        COLOR_XP = 19,
+        COLOR_SHADOW = 20,
+        CUSTOM_COLOR1 = 21,
+        CUSTOM_COLOR2 = 22,
+        CUSTOM_COLOR = 23
 	};
-	static const size_t COLOR_COUNT = 17;
+	static const size_t COLOR_COUNT = 21;
 
 	static const bool USE_ELLIPSIS = true;
 	FontEngine();

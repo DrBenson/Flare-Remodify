@@ -99,6 +99,13 @@ size_t FontEngine::stringToFontColor(const std::string& val) {
 	else if (val == "item_penalty") return COLOR_ITEM_PENALTY;
 	else if (val == "item_flavor") return COLOR_ITEM_FLAVOR;
 	else if (val == "hardcore_color_name") return COLOR_HARDCORE_NAME;
+	else if (val == "color_hp") return COLOR_HP;
+	else if (val == "color_mp") return COLOR_MP;
+	else if (val == "color_xp") return COLOR_XP;
+	else if (val == "color_shadow") return COLOR_SHADOW;
+	else if (val == "custom_color1") return CUSTOM_COLOR1;
+	else if (val == "custom_color2") return CUSTOM_COLOR2;
+	else if (val == "custom_color3") return CUSTOM_COLOR3;
 
 	// failed to find color
 	else return COLOR_COUNT;
@@ -304,7 +311,7 @@ void FontEngine::render(const std::string& text, int x, int y, int justify, Imag
 }
 
 void FontEngine::renderShadowed(const std::string& text, int x, int y, int justify, Image *target, int width, const Color& color) {
-	render(text, x+1, y+1, justify, target, width, getColor(COLOR_BLACK));
+	render(text, x+1, y+1, justify, target, width, getColor(COLOR_SHADOW));
 	render(text, x, y, justify, target, width, color);
 }
 

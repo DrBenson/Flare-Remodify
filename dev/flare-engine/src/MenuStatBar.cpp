@@ -31,6 +31,7 @@ FLARE.  If not, see http://www.gnu.org/licenses/
 #include "Menu.h"
 #include "MenuExit.h"
 #include "MenuManager.h"
+#include "MessageEngine.h"
 #include "MenuStatBar.h"
 #include "ModManager.h"
 #include "RenderDevice.h"
@@ -52,6 +53,7 @@ MenuStatBar::MenuStatBar(short _type)
 	, stat_max(0)
 	, orientation(HORIZONTAL)
 	, custom_text_pos(false) // label will be placed in the middle of the bar
+	, custom_text_color(false) // text will be placed with the color
 	, custom_string("")
 	, bar_gfx("")
 	, bar_gfx_background("")
@@ -59,6 +61,7 @@ MenuStatBar::MenuStatBar(short _type)
 	, bar_fill_offset()
 	, bar_fill_size(-1, -1)
 {
+
 	std::string type_filename;
 	if (type == TYPE_HP)
 		type_filename = "hp";
@@ -174,9 +177,14 @@ bool MenuStatBar::disappear() {
 	return false;
 }
 
-void MenuStatBar::render() {
+void MenuStatBar::render()
+{
 
 	if (disappear()) return;
+
+    // hp/mp status string
+    std::string sshp;
+    std::string ssmp;
 
 	Rect src;
 	Rect dest;
@@ -238,11 +246,54 @@ void MenuStatBar::render() {
 			std::stringstream ss;
 			if (!custom_string.empty())
 				ss << custom_string;
-			else
-				ss << stat_cur << "/" << stat_max;
+			else {
+				// ss << stat_cur << "/" << stat_max;
+                // Add text HP: or MP:
+                if (type == TYPE_HP) {
+                    sshp = std::string(msg->get("HP: %d/%d", stat_cur, stat_max));
+                    ss << sshp;
+                }
+                if (type == TYPE_MP) {
+                    ssmp = std::string(msg->get("MP: %d/%d", stat_cur, stat_max));
+                    ss << ssmp;
+                }
+            }
 
 			label->setText(ss.str());
-			label->setColor(font->getColor(FontEngine::COLOR_MENU_NORMAL));
+
+            // Draw shadow text first
+            label->setColor(font->getColor(FontEngine::COLOR_SHADOW));
+
+			if (custom_text_pos) {
+				label->setPos(bar_dest.x + text_pos.x + 1, bar_dest.y + text_pos.y + 1);
+				label->setJustify(text_pos.justify);
+				label->setVAlign(text_pos.valign);
+				label->setFont(text_pos.font_style);
+			}
+			else {
+				label->setPos(bar_dest.x + bar_pos.w/2 + 1, bar_dest.y + bar_pos.h/2 + 1);
+				label->setJustify(FontEngine::JUSTIFY_CENTER);
+				label->setVAlign(LabelInfo::VALIGN_CENTER);
+			}
+			label->render();
+
+            // setup custom color
+            if (custom_text_color == true) {
+                switch (type)
+                {
+                    case TYPE_HP:
+                        label->setColor(font->getColor(FontEngine::COLOR_HP));
+                        break;
+                    case TYPE_MP:
+                        label->setColor(font->getColor(FontEngine::COLOR_MP));
+                        break;
+                    case TYPE_XP:
+                        label->setColor(font->getColor(FontEngine::COLOR_XP));
+                        break;
+                    default:
+                        label->setColor(font->getColor(FontEngine::COLOR_WHITE));
+                }
+            }
 
 			if (custom_text_pos) {
 				label->setPos(bar_dest.x + text_pos.x, bar_dest.y + text_pos.y);

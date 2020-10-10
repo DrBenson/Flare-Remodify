@@ -22,6 +22,6 @@ hardcore_color_name=255,128,128
 
 color_shadow=128,128,128
 # hp, mp, xp text color
-color_hp=255,64,64,font_bold
+color_hp=255,64,64
 color_mp=64,128,255
 color_xp=64,255,128

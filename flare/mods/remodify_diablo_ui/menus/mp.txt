@@ -12,3 +12,4 @@ bar_gfx=images/menus/diablo_bar_mp.png
 bar_gfx_background=images/menus/diablo_bar_mp_bg.png
 
 text_pos=130,-20,right,top
+text_color=1

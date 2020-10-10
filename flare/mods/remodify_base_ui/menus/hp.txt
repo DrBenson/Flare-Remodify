@@ -9,7 +9,8 @@ bar_fill_size=320,6
 align=bottom
 orientation=0
 
-bar_gfx=images/menus/bar_hp1.png
-# bar_gfx_background=images/menus/bar_hp_bg1.png
+bar_gfx=images/menus/bar_hp.png
+# bar_gfx_background=images/menus/bar_hp_bg.png
 
 text_pos=0,-56,left,top
+text_color=1

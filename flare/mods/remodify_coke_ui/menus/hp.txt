@@ -13,3 +13,4 @@ bar_gfx=images/menus/Coke_bar_hp.png
 bar_gfx_background=images/menus/Coke_bar_hp_bg.png
 
 text_pos=50,-20,left,top
+text_color=1

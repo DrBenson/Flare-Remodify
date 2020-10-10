@@ -9,7 +9,8 @@ bar_fill_size=320,6
 align=bottom
 orientation=0
 
-bar_gfx=images/menus/bar_mp1.png
-# bar_gfx_background=images/menus/bar_mp_bg1.png
+bar_gfx=images/menus/bar_mp.png
+# bar_gfx_background=images/menus/bar_mp_bg.png
 
 text_pos=320,-56,right,top
+text_color=1

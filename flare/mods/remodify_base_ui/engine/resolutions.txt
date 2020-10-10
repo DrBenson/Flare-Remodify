@@ -1,4 +1,4 @@
 APPEND
 # to engine/resolutions.txt
 
-required_width=640
+required_width=600

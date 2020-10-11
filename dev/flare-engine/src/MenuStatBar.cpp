@@ -87,6 +87,13 @@ MenuStatBar::MenuStatBar(short _type)
 				custom_text_pos = true;
 				text_pos = Parse::popLabelInfo(infile.val);
 			}
+			// @ATTR text_color|bool|Change colors of the text displaying the current value of the relevant stat.
+			else if(infile.key == "text_color") {
+				text_color = Parse::toBool(infile.val);
+                if (text_color) {
+                    custom_text_color = true;
+                }
+			}
 			// @ATTR orientation|bool|True is vertical orientation; false is horizontal.
 			else if(infile.key == "orientation") {
 				orientation = Parse::toBool(infile.val);

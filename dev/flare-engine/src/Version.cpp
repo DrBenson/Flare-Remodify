@@ -30,7 +30,7 @@ FLARE.  If not, see http://www.gnu.org/licenses/
 
 #include <SDL.h>
 
-Version VersionInfo::ENGINE(1, 11, 61);
+Version VersionInfo::ENGINE(1, 11, 62);
 Version VersionInfo::MIN(0, 0, 0);
 Version VersionInfo::MAX(USHRT_MAX, USHRT_MAX, USHRT_MAX);
 
@@ -151,8 +151,8 @@ std::string VersionInfo::createVersionStringFull() {
 	std::stringstream ss;
 	ss << NAME << ' ' << ENGINE.getString();
 	ss << " (" << SDL_GetPlatform() << ")";
-    ss << "\t       Remodify version: 1.1.0";
-    ss << "\t     This remodify based on Flare (Free Libre Action Roleplaying Engine).";
+    ss << " - Remodify version: 1.1.0";
+    ss << "\t Based on Flare (Free Libre Action Roleplaying Engine).";
 	return ss.str();
 }
 std::string VersionInfo::createVersionStringFullText() {

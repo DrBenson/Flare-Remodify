@@ -64,6 +64,9 @@ FontEngine::FontEngine()
 			// @ATTR item_penalty|color|Item penalty text color. Recommended: red.
 			// @ATTR item_flavor|color|Item flavor text color. Recommended: grey.
 			// @ATTR hardcore_color_name|color|Permadeath save slot player name color. Recommended: red.
+			// @ATTR color_hp|color|Avator save slot player hp StatBar text color. Recommended: red.
+			// @ATTR color_mp|color|Avator save slot player mp StatBar text color. Recommended: blue.
+			// @ATTR color_xp|color|Avator save slot player xp StatBar text color. Recommended: green.
 			size_t color_id = stringToFontColor(infile.key);
 			if (color_id < COLOR_COUNT)
 				font_colors[color_id] = Parse::toRGB(infile.val);

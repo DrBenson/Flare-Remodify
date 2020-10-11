@@ -75,9 +75,9 @@ public:
         COLOR_SHADOW = 20,
         CUSTOM_COLOR1 = 21,
         CUSTOM_COLOR2 = 22,
-        CUSTOM_COLOR = 23
+        CUSTOM_COLOR3 = 23
 	};
-	static const size_t COLOR_COUNT = 21;
+	static const size_t COLOR_COUNT = 22;
 
 	static const bool USE_ELLIPSIS = true;
 	FontEngine();

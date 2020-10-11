@@ -51,6 +51,7 @@ private:
 	LabelInfo text_pos;
 	bool orientation;
 	bool custom_text_pos;
+	bool text_color;
 	bool custom_text_color;
 	std::string custom_string;
 	std::string bar_gfx;

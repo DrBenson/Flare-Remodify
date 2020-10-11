@@ -17,7 +17,7 @@ Flare-Remodify -------------------> This project home.
    ┣━┓flare ----------------------> Flare game mod.
    ┃ ┗━━━━┓
    ┃      ┣━┓android -------------> Android package files.
-   ┃      ┃ ┗━━━━━━━━ flare.apk --> Executable package for Android.
+   ┃      ┃ ┗━━━━━━━ Flare-*.apk -> Executable package for Android.
    ┃      ┃
    ┃      ┗━┓bin -----------------> Executable binary files.
    ┃        ┗━━━┳━ flare ---------> Executable binary for Linux.

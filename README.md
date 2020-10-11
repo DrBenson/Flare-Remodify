@@ -8,8 +8,7 @@
 ┃(Free Libre Action Roleplaying Engine)┃
 ┖──────────────────────────────────────┛
 ```
-  This is re-modify engine of flare game engine.
-Most are based on flare-engine source code.
+  This is re-modify engine of flare game engine. Most are based on flare-engine source code.
 
 ** Folder description **
 ```

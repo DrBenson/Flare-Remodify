@@ -27,7 +27,7 @@ style=zh,KaiTi.ttf,14,1
 
 [font]
 id=font_subtitles
-style=default,LiberationSans-Italic.ttf,16,1
+style=default,Laine.ttf,16,1
 style=ja,unifont-10.0.06.ttf,16,1
 style=zh,DFGYM.ttc,14,1
 

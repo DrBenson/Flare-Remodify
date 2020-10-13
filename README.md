@@ -23,7 +23,7 @@ Flare-Remodify ---------------------> This project home.
    ┃        ┗━━━┳━ flare -----------> Executable binary for Linux.
    ┃            ┣━ flare-SDL2 ------> Executable binary for Linux Include SDL2.
    ┃            ┣━ flare.exe -------> Executable binary for Windows.
-   ┃            ┗━ flare-SDL2.exe --> Executable binary for Windows.
+   ┃            ┗━ flare-SDL2.exe --> Executable binary for Windows Include SDL2.
    ┃
    ┗━┓dev --------------------------> Development source folder.
      ┗━━┳━ flare-engine ------------> Flare Action Roleplaying Engine(engine source code only).

@@ -12,22 +12,24 @@
 
 ** Folder description **
 ```
-Flare-Remodify -------------------> This project home.
+Flare-Remodify ---------------------> This project home.
 ━━━┓
-   ┣━┓flare ----------------------> Flare game mod.
+   ┣━┓flare ------------------------> Flare core and game mod.
    ┃ ┗━━━━┓
-   ┃      ┣━┓android -------------> Android package files.
-   ┃      ┃ ┗━━━━━━━ Flare-*.apk -> Executable package for Android.
+   ┃      ┣━┓android ---------------> Android package files.
+   ┃      ┃ ┗━━━━━━━ Flare-*.apk ---> Flare core package.
    ┃      ┃
-   ┃      ┗━┓bin -----------------> Executable binary files.
-   ┃        ┗━━━┳━ flare ---------> Executable binary for Linux.
-   ┃            ┗━ flare.exe -----> Executable binary for Windows.
+   ┃      ┗━┓bin -------------------> Executable binary files.
+   ┃        ┗━━━┳━ flare -----------> Executable binary for Linux.
+   ┃            ┣━ flare-SDL2 ------> Executable binary for Linux Include SDL2.
+   ┃            ┣━ flare.exe -------> Executable binary for Windows.
+   ┃            ┗━ flare-SDL2.exe --> Executable binary for Windows.
    ┃
-   ┗━┓dev ------------------------> Development source folder.
-     ┗━━┳━ flare-engine ----------> Flare Action Roleplaying Engine(engine source code only).
-        ┣━ empyrean_itemdef ------> Item generation script for Flare's Empyrean mod
-        ┣━ flare_map_traverse ----> Map drawer/traversal for flare-game
-        ┗━ tilesetdef-generator --> Tool to convert tilesets embedded in a TMX to Flare's tileset format.
+   ┗━┓dev --------------------------> Development source folder.
+     ┗━━┳━ flare-engine ------------> Flare Action Roleplaying Engine(engine source code only).
+        ┣━ empyrean_itemdef --------> Item generation script for Flare's Empyrean mod
+        ┣━ flare_map_traverse ------> Map drawer/traversal for flare-game
+        ┗━ tilesetdef-generator ----> Tool to convert tilesets embedded in a TMX to Flare's tileset format.
 ```
 ## Links
 

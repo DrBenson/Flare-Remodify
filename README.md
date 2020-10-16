@@ -21,9 +21,14 @@ Flare-Remodify -------------------> This project home.
  ┃      ┃
  ┃      ┗━┓bin -------------------> Executable binary files.
  ┃        ┗━━━┳━ flare -----------> Executable binary for Linux.
- ┃            ┣━ flare-SDL2 ------> Executable binary for Linux Include SDL2.
- ┃            ┣━ flare.exe -------> Executable binary for Windows.
- ┃            ┗━ flare-SDL2.exe --> Executable binary for Windows Include SDL2.
+ ┃            ┣━ flare-i686 ------> Executable binary for Linux i686.
+ ┃            ┣━ Flare-x64.exe ---> Executable binary for Windows.
+ ┃            ┣━ flare-win32.exe -> Executable binary for Windows win32.
+ ┃            ┣━ lib -------------> SDL2 Library for Linux i686.
+ ┃            ┣━ lib64 -----------> SDL2 Library for Linux.
+ ┃            ┣━ libSDL2-win-x86 -> SDL2 Library for Windows.
+ ┃            ┣━ libSDL2-win-x64 -> SDL2 Library for Windows win32.
+ ┃            ┗━ libSDL2-mac -----> SDL2 Library for macOS.
  ┃
  ┗━┓dev --------------------------> Development source folder.
    ┗━━┳━ flare-engine ------------> Flare Action Roleplaying Engine(engine source code only).

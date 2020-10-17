@@ -1,14 +1,13 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Flare - ReModify.
+# Copyright (C) YEAR Copyright (C) 2020 Benson's Network Technology
+# This file is distributed under the same license as the Flare - ReModify package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Flare - ReModify 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:39-0400\n"
+"POT-Creation-Date: 2020-10-16 14:10+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,933 +16,1515 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../src/Avatar.cpp:387
-msgid "Your health is low!"
-msgstr ""
-
-#: ../../../src/Avatar.cpp:419
+#: Map.cpp:93
 #, c-format
-msgid "Congratulations, you have reached level %d!"
+msgid "Map: Loading map '%s'"
 msgstr ""
 
-#: ../../../src/Avatar.cpp:421
-msgid "You may increase one or more attributes through the Character Menu."
+#: Map.cpp:144
+msgid ""
+"Map: Hero spawn position (hero_pos) not defined in map header. Defaulting to "
+"(0,0)."
 msgstr ""
 
-#: ../../../src/Avatar.cpp:425
-msgid "You may unlock one or more abilities through the Powers Menu."
+#: Map.cpp:151 MenuPowers.cpp:391 GameStateLoad.cpp:378 GameStatePlay.cpp:471
+#: GameStatePlay.cpp:478
+msgid "title"
 msgstr ""
 
-#: ../../../src/Avatar.cpp:692
-msgid "You are defeated. Game over! ${INPUT_CONTINUE} to exit to Title."
-msgstr ""
-
-#: ../../../src/Avatar.cpp:698
-msgid "You are defeated. ${INPUT_CONTINUE} to continue."
-msgstr ""
-
-#: ../../../src/Avatar.cpp:949
-msgid "Transformation expired. You have been moved back to a safe place."
-msgstr ""
-
-#: ../../../src/CampaignManager.cpp:153
+#: Map.cpp:195 Map.cpp:247 Map.cpp:342 Map.cpp:372
 #, c-format
-msgid "%d %s removed."
+msgid "Map: '%s' is not a valid key."
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:165
+#: Map.cpp:214 Map.cpp:215
+msgid "Map: The format of a layer must be 'dec'!"
+msgstr ""
+
+#: Map.cpp:237
 #, c-format
-msgid "%s x%d removed."
+msgid "Map: A row of layer data has a width not equal to %d."
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:167
+
+#: Map.cpp:260 ItemManager.cpp:167 MenuCharacter.cpp:165
+#: EnemyGroupManager.cpp:50 PowerManager.cpp:777 GameStateLoad.cpp:167
+#: GameStatePlay.cpp:482 EngineSettings.cpp:925 StatBlock.cpp:436
+msgid "level"
+msgstr ""
+
+#: MenuNumPicker.cpp:59
+msgid "Enter amount:"
+msgstr ""
+
+#: MenuNumPicker.cpp:99
 #, c-format
-msgid "%s removed."
+msgid "MenuNumPicker: '%s' is not a valid key."
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:180
+#: MenuPowers.cpp:163 MenuPowers.cpp:465 MenuPowers.cpp:511
 #, c-format
-msgid "You receive %s."
+msgid "MenuPowers: '%s' is not a valid key."
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:182
+#: MenuPowers.cpp:168 InputState.cpp:434 MenuActionBar.cpp:86
+msgid "Powers"
+msgstr ""
+
+#: MenuPowers.cpp:266 MenuPowers.cpp:284 ItemManager.cpp:291
+#: GameStatePlay.cpp:486 StatBlock.cpp:497 api/MapSaver.cpp:54
+#: EventManager.cpp:578
+msgid "power"
+msgstr ""
+
+#: MenuPowers.cpp:405 MenuPowers.cpp:479
 #, c-format
-msgid "You receive %s x%d."
+msgid "MenuPowers: Power index out of bounds 1-%d, skipping power."
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:191
+#: MenuPowers.cpp:414
+msgid ""
+"MenuPowers: There is a power without a valid id as the first attribute. IDs "
+"must be the first attribute in the power menu definition."
+msgstr ""
+
+#: MenuPowers.cpp:434 MenuPowers.cpp:465
 #, c-format
-msgid "You receive %d %s."
-msgstr ""
+msgid "MenuPowers: '%s' is not a valid key."
+msgstr =""
 
-#: ../../../src/CampaignManager.cpp:200
+#: MenuPowers.cpp:434 MenuPowers.cpp:496
 #, c-format
-msgid "You receive %d XP."
+msgid "MenuPowers: '%s' is not a valid primary stat."
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:206
-msgid "HP restored."
+#: MenuPowers.cpp:812 MenuPowers.cpp:1187 MenuPowers.cpp:1588
+#: ItemManager.cpp:742 GameStateLoad.cpp:766
+#, c-format
+msgid "Level %d"
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:210
-msgid "MP restored."
+#: MenuPowers.cpp:824
+msgid "Passive"
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:215
-msgid "HP and MP restored."
+#: MenuPowers.cpp:831
+#, c-format
+msgid "Costs %d MP"
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:219
-msgid "Negative effects removed."
+#: MenuPowers.cpp:835
+#, c-format
+msgid "Costs %d HP"
 msgstr ""
 
-#: ../../../src/CampaignManager.cpp:225
-msgid "HP and MP restored, negative effects removed"
+#: MenuPowers.cpp:840
+msgid "Cooldown:"
 msgstr ""
 
-#: ../../../src/DeviceList.cpp:56
+#: MenuPowers.cpp:872 ItemManager.cpp:669 MenuCharacter.cpp:354
+#, c-format
+msgid "Resistance (%s)"
+msgstr ""
+
+#: MenuPowers.cpp:905 MenuPowers.cpp:908
+msgid "Damage per second"
+msgstr ""
+
+#: MenuPowers.cpp:911 MenuPowers.cpp:914
+msgid "HP per second"
+msgstr ""
+
+#: MenuPowers.cpp:917 MenuPowers.cpp:920
+msgid "MP per second"
+msgstr ""
+
+#: MenuPowers.cpp:924
+msgid "Immobilize"
+msgstr ""
+
+#: MenuPowers.cpp:926 ItemManager.cpp:643
+#, c-format
+msgid "%d%% Speed"
+msgstr ""
+
+#: MenuPowers.cpp:929 ItemManager.cpp:647
+#, c-format
+msgid "%d%% Attack Speed"
+msgstr ""
+
+#: MenuPowers.cpp:932
+msgid "Immunity"
+msgstr ""
+
+#: MenuPowers.cpp:935
+msgid "Immunity to damage over time"
+msgstr ""
+
+#: MenuPowers.cpp:938
+msgid "Immunity to slow"
+msgstr ""
+
+#: MenuPowers.cpp:941
+msgid "Immunity to stun"
+msgstr ""
+
+#: MenuPowers.cpp:944
+msgid "Immunity to HP steal"
+msgstr ""
+
+#: MenuPowers.cpp:947
+msgid "Immunity to MP steal"
+msgstr ""
+
+#: MenuPowers.cpp:950
+msgid "Immunity to knockback"
+msgstr ""
+
+#: MenuPowers.cpp:953
+msgid "Immunity to damage reflection"
+msgstr ""
+
+#: MenuPowers.cpp:959
+msgid "Stun"
+msgstr ""
+
+#: MenuPowers.cpp:962
+msgid "Automatic revive on death"
+msgstr ""
+
+#: MenuPowers.cpp:965
+msgid "Convert"
+msgstr ""
+
+#: MenuPowers.cpp:968
+msgid "Fear"
+msgstr ""
+
+#: MenuPowers.cpp:971
+msgid "Lifespan"
+msgstr ""
+
+#: MenuPowers.cpp:995
+msgid "Magical Shield"
+msgstr ""
+
+#: MenuPowers.cpp:1024
+msgid "Healing"
+msgstr ""
+
+#: MenuPowers.cpp:1027
+msgid "Knockback"
+msgstr ""
+
+#: MenuPowers.cpp:1052
+#, c-format
+msgid "%d%% chance"
+msgstr ""
+
+#: MenuPowers.cpp:1104
+msgid "Base Accuracy"
+msgstr ""
+
+#: MenuPowers.cpp:1124
+msgid "Base Critical Chance"
+msgstr ""
+
+#: MenuPowers.cpp:1132
+msgid "Ignores Absorbtion"
+msgstr ""
+
+#: MenuPowers.cpp:1137
+msgid "Ignores Avoidance"
+msgstr ""
+
+#: MenuPowers.cpp:1142
+#, c-format
+msgid "%d%% Chance to crit slowed targets"
+msgstr ""
+
+#: MenuPowers.cpp:1147
+#, c-format
+msgid "Elemental Damage (%s)"
+msgstr ""
+
+#: MenuPowers.cpp:1156
+#, c-format
+msgid "Requires a %s"
+msgstr ""
+
+#: MenuPowers.cpp:1166 MenuPowers.cpp:1168 ItemManager.cpp:833
+#, c-format
+msgid "Requires %s %d"
+msgstr ""
+
+#: MenuPowers.cpp:1174 MenuPowers.cpp:1177 ItemManager.cpp:822
+#, c-format
+msgid "Requires Level %d"
+msgstr ""
+
+#: MenuPowers.cpp:1194 MenuPowers.cpp:1197
+#, c-format
+msgid "Requires Power: %s"
+msgstr ""
+
+#: MenuPowers.cpp:1206
+msgid "Click to Unlock (uses 1 Skill Point)"
+msgstr ""
+
+#: MenuPowers.cpp:1210 MenuPowers.cpp:1212
+msgid "Requires 1 Skill Point"
+msgstr ""
+
+#: MenuPowers.cpp:1399
+#, c-format
+msgid "%d unspent skill point"
+msgstr ""
+
+#: MenuPowers.cpp:1402
+#, c-format
+msgid "%d unspent skill points"
+msgstr ""
+
+#: MenuPowers.cpp:1432
+msgid "Next Level:"
+msgstr ""
+
+#: PlatformEmscripten.cpp:121
+msgid "start file sync.."
+msgstr ""
+
+#: PlatformEmscripten.cpp:126
+msgid "end file sync.."
+msgstr ""
+
+#: PlatformEmscripten.cpp:133
+msgid "Module.syncdone"
+msgstr ""
+
+#: PlatformEmscripten.cpp:138
+msgid "Start File sync.."
+msgstr ""
+
+#: PlatformEmscripten.cpp:142
+msgid "End File sync.."
+msgstr ""
+
+#: GameSlotPreview.cpp:66 GameSlotPreview.cpp:67
+msgid "GameSlotPreview: Hero layer direction must be in range [0,7]"
+msgstr ""
+
+#: GameSlotPreview.cpp:86
+#, c-format
+msgid "GameSlotPreview: '%s' is not a valid key."
+msgstr ""
+
+#: GameSlotPreview.cpp:121
+#, c-format
+msgid ""
+"GameSlotPreview: Error syncing animation in '%s' to 'animations/hero.txt'."
+msgstr ""
+
+#: InputState.cpp:128
+msgid ""
+"InputState: Found unexpected save prefix keybinding file. Removing it now."
+msgstr ""
+
+#: InputState.cpp:144
+#, c-format
+msgid ""
+"InputState: Keybindings configuration file is out of date (%s < %s). "
+"Resetting to engine defaults."
+msgstr ""
+
+#: InputState.cpp:146
+msgid ""
+"InputState: Keybindings configuration file is out of date. Resetting to "
+"engine defaults."
+msgstr ""
+
+#: InputState.cpp:292
+msgid "# Keybindings\n"
+msgstr ""
+
+#: InputState.cpp:294
+msgid "# A bind value of -1 means unbound\n"
+msgstr ""
+
+#: InputState.cpp:295
+msgid "# For BIND and BIND_ALT, a value of 0 is also unbound\n"
+msgstr ""
+
+#: InputState.cpp:296
+msgid "# For BIND and BIND_ALT, any value less than -1 is a mouse button\n"
+msgstr ""
+
+#: InputState.cpp:297
+msgid ""
+"# As an example, mouse button 1 would be -3 here. Button 2 would be -4, "
+"etc.\n"
+"\n"
+msgstr ""
+
+#: InputState.cpp:416 MenuConfig.cpp:244 GameStateNew.cpp:66
+msgid "Cancel"
+msgstr ""
+
+#: InputState.cpp:417
+msgid "Accept"
+msgstr ""
+
+#: InputState.cpp:418 SDLInputState.cpp:668 SDLInputState.cpp:698
+#: MenuMovementType.cpp:123 MenuMovementType.cpp:132
+msgid "Up"
+msgstr ""
+
+#: InputState.cpp:419 SDLInputState.cpp:646 SDLInputState.cpp:676
+#: MenuMovementType.cpp:125 MenuMovementType.cpp:134
+msgid "Down"
+msgstr ""
+
+#: InputState.cpp:420 SDLInputState.cpp:653 SDLInputState.cpp:683
+#: MenuMovementType.cpp:124 MenuMovementType.cpp:133
+msgid "Left"
+msgstr ""
+
+#: InputState.cpp:421 SDLInputState.cpp:663 SDLInputState.cpp:693
+#: MenuMovementType.cpp:126 MenuMovementType.cpp:135
+msgid "Right"
+msgstr ""
+
+#: InputState.cpp:422
+msgid "Bar1"
+msgstr ""
+
+#: InputState.cpp:423
+msgid "Bar2"
+msgstr ""
+
+#: InputState.cpp:424
+msgid "Bar3"
+msgstr ""
+
+#: InputState.cpp:425
+msgid "Bar4"
+msgstr ""
+
+#: InputState.cpp:426
+msgid "Bar5"
+msgstr ""
+
+#: InputState.cpp:427
+msgid "Bar6"
+msgstr ""
+
+#: InputState.cpp:428
+msgid "Bar7"
+msgstr ""
+
+#: InputState.cpp:429
+msgid "Bar8"
+msgstr ""
+
+#: InputState.cpp:430
+msgid "Bar9"
+msgstr ""
+
+#: InputState.cpp:431
+msgid "Bar0"
+msgstr ""
+
+#: InputState.cpp:432 MenuCharacter.cpp:54 MenuActionBar.cpp:84
+msgid "Character"
+msgstr ""
+
+#: InputState.cpp:433 MenuInventory.cpp:130 MenuVendor.cpp:57
+#: MenuActionBar.cpp:85
+msgid "Inventory"
+msgstr ""
+
+#: InputState.cpp:435 MenuLog.cpp:72 MenuActionBar.cpp:87
+msgid "Log"
+msgstr ""
+
+#: InputState.cpp:436
+msgid "Main1"
+msgstr ""
+
+#: InputState.cpp:437
+msgid "Main2"
+msgstr ""
+
+#: InputState.cpp:438
+msgid "Ctrl"
+msgstr ""
+
+#: InputState.cpp:439
+msgid "Shift"
+msgstr ""
+
+#: InputState.cpp:440
+msgid "Alt"
+msgstr ""
+
+#: InputState.cpp:441 SDLInputState.cpp:675
+msgid "Delete"
+msgstr ""
+
+#: InputState.cpp:442
+msgid "ActionBar Accept"
+msgstr ""
+
+#: InputState.cpp:443
+msgid "ActionBar Left"
+msgstr ""
+
+#: InputState.cpp:444
+msgid "ActionBar Right"
+msgstr ""
+
+#: InputState.cpp:445
+msgid "ActionBar Use"
+msgstr ""
+
+#: InputState.cpp:446
+msgid "Developer Menu"
+msgstr ""
+
+#: InputState.cpp:448
+msgid "Left Mouse"
+msgstr ""
+
+#: InputState.cpp:449
+msgid "Middle Mouse"
+msgstr ""
+
+#: InputState.cpp:450
+msgid "Right Mouse"
+msgstr ""
+
+#: InputState.cpp:451
+msgid "Wheel Up"
+msgstr ""
+
+#: InputState.cpp:452
+msgid "Wheel Down"
+msgstr ""
+
+#: InputState.cpp:453
+msgid "Mouse X1"
+msgstr ""
+
+#: InputState.cpp:454
+msgid "Mouse X2"
+msgstr ""
+
+#: MenuInventory.cpp:119
+#, c-format
+msgid "MenuInventory: '%s' is not a valid key."
+msgstr ""
+
+#: MenuInventory.cpp:178
+#, c-format
+msgid "Lost %d%% of %s."
+msgstr ""
+
+#: MenuInventory.cpp:185
+#, c-format
+msgid "Lost %d%% of total XP."
+msgstr ""
+
+#: MenuInventory.cpp:190
+#, c-format
+msgid "Lost %d%% of current level XP."
+msgstr ""
+
+#: MenuInventory.cpp:216
+#, c-format
+msgid "Lost %s."
+msgstr ""
+
+#: MenuInventory.cpp:301
+msgid "Pick up item(s):"
+msgstr ""
+
+#: MenuInventory.cpp:302
+msgid "Use or equip item:"
+msgstr ""
+
+#: MenuInventory.cpp:303
+#, c-format
+msgid "%s modifiers"
+msgstr ""
+
+#: MenuInventory.cpp:304
+msgid "Select a quantity of item:"
+msgstr ""
+
+#: MenuInventory.cpp:307
+msgid "Stash item stack:"
+msgstr ""
+
+#: MenuInventory.cpp:309
+msgid "Sell item stack:"
+msgstr ""
+
+#: MenuInventory.cpp:576
+msgid "You don't have enough of the required item."
+msgstr ""
+
+#: MenuInventory.cpp:588
+msgid "You can't use this item right now."
+msgstr ""
+
+#: MenuInventory.cpp:600
+msgid "This item can only be used from the action bar."
+msgstr ""
+
+#: MenuInventory.cpp:642
+#, c-format
+msgid "MenuInventory: Can't find equip slot, corresponding to type %s"
+msgstr ""
+
+#: MenuInventory.cpp:718
+msgid "Inventory is full."
+msgstr ""
+
+#: MenuInventory.cpp:754 ItemManager.cpp:915
+msgid "consumable"
+msgstr ""
+
+#: MenuInventory.cpp:843
+#, c-format
+msgid "Not enough %s."
+msgstr ""
+
+#: MenuInventory.cpp:863 MenuInventory.cpp:870
+msgid "This item can not be sold."
+msgstr ""
+
+#: ItemManager.cpp:112
+msgid "ItemManager: No items were found."
+msgstr ""
+
+#: ItemManager.cpp:154
+#, c-format
+msgid "ItemManager: Item index out of bounds 1-%d, skipping item."
+msgstr ""
+
+#: ItemManager.cpp:213
+#, c-format
+msgid "ItemManager: '%s' is not a known damage type id."
+msgstr ""
+
+#: ItemManager.cpp:247
+#, c-format
+msgid "ItemManager: '%s' is not a valid primary stat."
+msgstr ""
+
+#: ItemManager.cpp:296
+#, c-format
+msgid "ItemManager: Power index out of bounds 1-%d, skipping power."
+msgstr ""
+
+#: ItemManager.cpp:358
+#, c-format
+msgid ""
+"ItemManager: '%s' is not a valid value for 'no_stash'. Use 'ignore', "
+"'private', 'shared', or 'all'."
+msgstr ""
+
+#: ItemManager.cpp:365 ItemManager.cpp:411 ItemManager.cpp:459
+#: ItemManager.cpp:587
+#, c-format
+msgid "ItemManager: '%s' is not a valid key."
+msgstr ""
+
+#: ItemManager.cpp:472
+msgid "Unknown Item"
+msgstr ""
+
+#: ItemManager.cpp:543
+#, c-format
+msgid "ItemManager: Item set index out of bounds 1-%d, skipping set."
+msgstr ""
+
+#: ItemManager.cpp:638
+#, c-format
+msgid "ItemManager: Unknown bonus type '%s'."
+msgstr ""
+
+#: ItemManager.cpp:679
+#, c-format
+msgid "Requires %s"
+msgstr ""
+
+#: ItemManager.cpp:728
+msgid "Quest Item"
+msgstr ""
+
+#: ItemManager.cpp:755
+#, c-format
+msgid "Quality: %s"
+msgstr ""
+
+#: ItemManager.cpp:780
+#, c-format
+msgid "Absorb: %d-%d"
+msgstr ""
+
+#: ItemManager.cpp:782
+#, c-format
+msgid "Absorb: %d"
+msgstr ""
+
+#: ItemManager.cpp:844
+#, c-format
+msgid "Requires Class: %s"
+msgstr ""
+
+#: ItemManager.cpp:859 ItemManager.cpp:871
+#, c-format
+msgid "Buy Price: %d %s"
+msgstr ""
+
+#: ItemManager.cpp:861 ItemManager.cpp:873
+#, c-format
+msgid "Buy Price: %d %s each"
+msgstr ""
+
+#: ItemManager.cpp:881
+#, c-format
+msgid "Sell Price: %d %s"
+msgstr ""
+
+#: ItemManager.cpp:883
+#, c-format
+msgid "Sell Price: %d %s each"
+msgstr ""
+
+#: ItemManager.cpp:892
+msgid "Set:"
+msgstr ""
+
+#: ItemManager.cpp:899
+#, c-format
+msgid "%d items:"
+msgstr ""
+
+#: ItemManager.cpp:911
+#, c-format
+msgid "Press [%s] to read"
+msgstr ""
+
+#: ItemManager.cpp:917
+#, c-format
+msgid "Press [%s] to use"
+msgstr ""
+
+#: ItemManager.cpp:978
+#, c-format
+msgid "ItemStack: Item id is zero, but quantity is %d."
+msgstr ""
+
+#: ItemManager.cpp:982
+#, c-format
+msgid "ItemStack: Item id is %d, but quantity is zero."
+msgstr ""
+
+#: SDLFontEngine.cpp:46 SDLFontEngine.cpp:47
+#, c-format
+msgid "SDLFontEngine: TTF_Init: %s"
+msgstr ""
+
+#: SDLFontEngine.cpp:62
+msgid "FontEngine: Support for 'font_fallback' has been removed."
+msgstr ""
+
+#: SDLFontEngine.cpp:89
+#, c-format
+msgid "FontEngine: TTF_OpenFont: %s"
+msgstr ""
+
+#: SDLFontEngine.cpp:105 SDLFontEngine.cpp:106
+msgid "FontEngine: Unable to determine default font!"
+msgstr ""
+
+#: SDLFontEngine.cpp:214
+#, c-format
+msgid "FontEngine: Invalid font '%s'. Falling back to '%s'."
+msgstr ""
+
+#: SDLFontEngine.cpp:220
+#, c-format
+msgid "FontEngine: Invalid font '%s'. No fallback available."
+msgstr ""
+
+#: SDLSoundManager.cpp:52
+#, c-format
+msgid "SDLSoundManager: Error during Mix_OpenAudio: %s"
+msgstr ""
+
+#: SDLSoundManager.cpp:57
+#, c-format
+msgid "SoundManager: Using SDLSoundManager (SDL2, %s)"
+msgstr ""
+
+#: SDLSoundManager.cpp:177
+#, c-format
+msgid "SoundManager: %s: Loading sound %s (%s) failed: %s"
+msgstr ""
+
+#: SDLSoundManager.cpp:254
+msgid "SoundManager: Failed to play sound, no more channels available."
+msgstr ""
+
+#: SDLSoundManager.cpp:330
+#, c-format
+msgid "SoundManager: Couldn't load music file '%s': %s"
+msgstr ""
+
+#: GameSwitcher.cpp:94 GameSwitcher.cpp:117 GameSwitcher.cpp:252
+#, c-format
+msgid "GameSwitcher: '%s' is not a valid key."
+msgstr ""
+
+#: main.cpp:94 main.cpp:95
+#, c-format
+msgid "main: Could not initialize SDL: %s"
+msgstr ""
+
+#: main.cpp:104
+msgid "main: Could not find the default mod in the following locations:"
+msgstr ""
+
+#: main.cpp:107
+msgid ""
+"A copy of the default mod is in the \"mods\" directory of the flare-engine "
+"repo."
+msgstr ""
+
+#: main.cpp:108
+msgid "The repo is located at: https://github.com/flareteam/flare-engine"
+msgstr ""
+
+#: main.cpp:109
+msgid "and located https://github.com/DrBenson/Flare-Remodify/flare"
+msgstr ""
+
+#: main.cpp:110
+msgid ""
+"Try again after copying the default mod to one of the above directories. "
+"Exiting."
+msgstr ""
+
+#: main.cpp:111
+#, c-format
+msgid ""
+"main: Could not find the 'default' mod in the following locations:\n"
+"\n"
+"%smods/\n"
+"%smods/"
+msgstr ""
+
+#: main.cpp:148 main.cpp:149
+#, c-format
+msgid "main: Could not create rendering context: %s"
+msgstr ""
+
+#: main.cpp:371
+#, c-format
+msgid "Custom data path: \"%s\""
+msgstr ""
+
+#: main.cpp:375
+#, c-format
+msgid "Invalid custom data path: \"%s\""
+msgstr ""
+
+#: main.cpp:405
+msgid ""
+"Command line options:\n"
+"--help                   Prints this message.\n"
+"--version                Prints the release version.\n"
+"--data-path=<PATH>       Specifies an exact path to look for mod data.\n"
+"--debug-event            Prints verbose hardware input information.\n"
+"--renderer=<RENDERER>    Specifies the rendering backend to use.\n"
+"                         The default is 'sdl'.\n"
+"--no-audio               Disables sound effects and music.\n"
+"--mods=<MOD>,...         Starts the game with only these mods enabled.\n"
+"--load-slot=<SLOT>       Loads a save slot by numerical index.\n"
+"--load-script=<SCRIPT>   Execute's a script upon loading a saved game.\n"
+"                         The script path is mod-relative.\n"
+"--safe-video             Launches with the minimum video settings."
+msgstr ""
+
+#: main.cpp:421
+#, c-format
+msgid ""
+"'%s' is not a valid command line option. Try '--help' for a list of valid "
+"options."
+msgstr ""
+
+#: main.cpp:447
+msgid "main: Restarting Flare..."
+msgstr ""
+
+#: UtilsParsing.cpp:108 UtilsParsing.cpp:147
+#, c-format
+msgid "UtilsParsing: %s: a required type is not defined!"
+msgstr ""
+
+#: UtilsParsing.cpp:186
+#, c-format
+msgid "UtilsParsing: %s %s doesn't know how to handle %s"
+msgstr ""
+
+#: UtilsParsing.cpp:240
+#, c-format
+msgid "UtilsParsing: Duration of '%d' does not have a suffix. Assuming 'ms'."
+msgstr ""
+
+#: UtilsParsing.cpp:272
+#, c-format
+msgid "UtilsParsing: Direction '%d' is not within range 0-7."
+msgstr ""
+
+#: AnimationSet.cpp:150 AnimationSet.cpp:215
+#, c-format
+msgid "AnimationSet: '%s' is not a valid key."
+msgstr ""
+
+#: AnimationSet.cpp:162
+#, c-format
+msgid "AnimationSet: Frame count %d != %d for matching animation in %s"
+msgstr ""
+
+#: PlatformGCW0.cpp:139 PlatformIPhoneOS.cpp:155 PlatformWin32.cpp:75
+#: PlatformLinux.cpp:119
+msgid "Platform: Could not find specified game data directory."
+msgstr ""
+
+#: PlatformIPhoneOS.cpp:44 PlatformAndroid.org:67 PlatformAndroid.cpp:67
+msgid "Terminating app, saving..."
+msgstr ""
+
+#: PlatformIPhoneOS.cpp:46 PlatformAndroid.org:69 PlatformAndroid.cpp:69
+msgid "Saved, ready to exit."
+msgstr ""
+
+#: Menu.cpp:120
+msgid "Menu close tab"
+msgstr ""
+
+#: MenuBook.cpp:89 MenuBook.cpp:206 MenuBook.cpp:255 MenuBook.cpp:286
+#, c-format
+msgid "MenuBook: '%s' is not a valid key."
+msgstr ""
+
+#: DeviceList.cpp:39
+#, c-format
+msgid "DeviceList: Render device '%s' not found. Falling back to the default."
+msgstr ""
+
+#: DeviceList.cpp:56
 msgid ""
 "SDL software renderer\n"
 "\n"
 "Often slower, but less likely to have issues."
 msgstr ""
 
-#: ../../../src/DeviceList.cpp:59
+#: DeviceList.cpp:59
 msgid ""
 "SDL hardware renderer\n"
 "\n"
 "The default renderer that is often faster than the SDL software renderer."
 msgstr ""
 
-#: ../../../src/EngineSettings.cpp:572
-msgid "Adventurer"
+#: Settings.cpp:65
+msgid "fullscreen mode. 1 enable, 0 disable."
 msgstr ""
 
-#: ../../../src/Entity.cpp:522
-msgid "miss"
+#: Settings.cpp:66
+msgid "display resolution. 640x480 minimum."
 msgstr ""
 
-#: ../../../src/Entity.cpp:560 ../../../src/PowerManager.cpp:1186
-#: ../../../src/StatBlock.cpp:813 ../../../src/StatBlock.cpp:819
+#: Settings.cpp:68
+msgid "music and sound volume (0 = silent, 128 = max)"
+msgstr ""
+
+#: Settings.cpp:70
+msgid "display floating damage text. 1 enable, 0 disable."
+msgstr ""
+
+#: Settings.cpp:71
+msgid "use mouse to move (experimental). 1 enable, 0 disable."
+msgstr ""
+
+#: Settings.cpp:72
+msgid ""
+"hardware surfaces, v-sync. Try disabling for performance. 1 enable, 0 "
+"disable."
+msgstr ""
+
+#: Settings.cpp:74
+msgid "texture filter quality. 0 nearest neighbor (worst), 1 linear (best)"
+msgstr ""
+
+#: Settings.cpp:75
+msgid "toggle DPI-based render scaling. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:76
+msgid "toggle rendering of parallax map layers. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:77
+msgid "maximum frames per second. default is 60"
+msgstr ""
+
+#: Settings.cpp:78
+msgid "default render device. 'sdl' is the default setting"
+msgstr ""
+
+#: Settings.cpp:79
+msgid "joystick settings."
+msgstr ""
+
+#: Settings.cpp:83
+msgid "allow changing gamma (experimental). 1 enable, 0 disable."
+msgstr ""
+
+#: Settings.cpp:84
+msgid "screen gamma (0.5 = darkest, 2.0 = lightest)"
+msgstr ""
+
+#: Settings.cpp:85
+msgid "use mouse to aim. 1 enable, 0 disable."
+msgstr ""
+
+#: Settings.cpp:86
+msgid ""
+"make using mouse secondary, give full control to keyboard. 1 enable, 0 "
+"disable."
+msgstr ""
+
+#: Settings.cpp:87
+msgid "show frames per second. 1 enable, 0 disable."
+msgstr ""
+
+#: Settings.cpp:88
+msgid "enable colorblind tooltips. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:89
+msgid "use the system mouse cursor. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:90
+msgid "allow opening the developer console. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:91
+msgid ""
+"shows some additional information on-screen when developer mode is enabled. "
+"1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:92
+msgid "loot tooltip mode. 0 normal, 1 show all, 2 hide all"
+msgstr ""
+
+#: Settings.cpp:93
+msgid "always show labels on HP/MP/XP bars. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:94
+msgid ""
+"allows the HP/MP/XP bars to auto-hide on inactivity. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:95
+msgid "automatically equip items. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:96
+msgid "displays subtitles. 1 enable, 0 disable"
+msgstr ""
+
+#: Settings.cpp:97
+msgid "mini-map display mode. 0 is normal, 1 is 2x zoom, 2 is hidden"
+msgstr ""
+
+#: Settings.cpp:98
+msgid ""
+"use 'Main2' as the movement action when using mouse movement. 1 enable, 0 "
+"disable."
+msgstr ""
+
+#: Settings.cpp:99
+msgid ""
+"allows attacking with the mouse movement button if an enemy is targeted and "
+"in range. 1 enable, 0 disable."
+msgstr ""
+
+#: Settings.cpp:100
+msgid ""
+"shows are marker above entities that are hidden behind tall tiles. 1 enable, "
+"0 disable."
+msgstr ""
+
+#: Settings.cpp:101
+msgid "index of the last used save slot"
+msgstr ""
+
+#: Settings.cpp:103
+msgid ""
+"low health warning type settings. 0 disable, 1 all, 2 message & cursor, 3 "
+"message & sound, 4 cursor & sound , 5 message, 6 cursor, 7 sound."
+msgstr ""
+
+#: Settings.cpp:104
+msgid "set HP threshold that triggers warning."
+msgstr ""
+
+#: Settings.cpp:105
+msgid ""
+"flag that is set once the player picks a movement type after first launching "
+"the game"
+msgstr ""
+
+#: Settings.cpp:110
 #, c-format
-msgid "+%d HP"
+msgid "Settings: Can't set default config value; %u is not a valid index."
 msgstr ""
 
-#: ../../../src/Entity.cpp:567 ../../../src/StatBlock.cpp:824
-#: ../../../src/StatBlock.cpp:830
+#: Settings.cpp:127
 #, c-format
-msgid "+%d MP"
+msgid "Settings: '%s' is not a valid configuration key."
 msgstr ""
 
-#: ../../../src/EventManager.cpp:782
-msgid "Unknown destination"
+#: Settings.cpp:193
+msgid ""
+"Settings: Unable to write settings file. No write access or disk is full!"
 msgstr ""
 
-#: ../../../src/GameState.cpp:37 ../../../src/GameState.cpp:58
-msgid "Loading..."
+#: LootManager.cpp:57
+msgid "LootManager dropping loot"
 msgstr ""
 
-#: ../../../src/GameStateLoad.cpp:90 ../../../src/GameStateLoad.cpp:103
-msgid "Delete Save"
+#: LootManager.cpp:625
+msgid "LootManager: Invalid item id for loot."
 msgstr ""
 
-#: ../../../src/GameStateLoad.cpp:90
-msgid "Delete this save?"
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:92
-msgid "Exit to Title"
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:95
-msgid "New Game"
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:99 ../../../src/GameStateLoad.cpp:608
-msgid "Choose a Slot"
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:581 ../../../src/GameStateLoad.cpp:602
-msgid "Enable a story mod to continue"
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:597
-msgid "Load Game"
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:706
-msgid "Entering game world..."
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:709
-msgid "Loading saved game..."
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:742
-msgid "Invalid save"
-msgstr ""
-
-#: ../../../src/GameStateLoad.cpp:766 ../../../src/ItemManager.cpp:777
-#: ../../../src/MenuPowers.cpp:777 ../../../src/MenuPowers.cpp:1143
-#: ../../../src/MenuPowers.cpp:1543
+#: NPCManager.cpp:136
 #, c-format
-msgid "Level %d"
+msgid ""
+"NPCManager: Unable to set click hotspot for '%s' due to lack of animation."
 msgstr ""
 
-#: ../../../src/GameStateNew.cpp:65 ../../../src/InputState.cpp:406
-#: ../../../src/MenuConfig.cpp:244
-msgid "Cancel"
-msgstr ""
-
-#: ../../../src/GameStateNew.cpp:68
-msgid "Create"
-msgstr ""
-
-#: ../../../src/GameStateNew.cpp:76
-msgid "Randomize"
-msgstr ""
-
-#: ../../../src/GameStateNew.cpp:92
-msgid "Choose a Portrait"
-msgstr ""
-
-#: ../../../src/GameStateNew.cpp:96
-msgid "Choose a Name"
-msgstr ""
-
-#: ../../../src/GameStateNew.cpp:100
-msgid "Permadeath?"
-msgstr ""
-
-#: ../../../src/GameStateNew.cpp:104
-msgid "Choose a Class"
-msgstr ""
-
-#: ../../../src/GameStateTitle.cpp:107
-msgid "Play Game"
-msgstr ""
-
-#: ../../../src/GameStateTitle.cpp:110
-msgid "Enable a core mod to continue"
-msgstr ""
-
-#: ../../../src/GameStateTitle.cpp:114
-msgid "Configuration"
-msgstr ""
-
-#: ../../../src/GameStateTitle.cpp:117
-msgid "Credits"
-msgstr ""
-
-#: ../../../src/GameStateTitle.cpp:120
-msgid "Exit Game"
-msgstr ""
-
-#: ../../../src/InputState.cpp:407
-msgid "Accept"
-msgstr ""
-
-#: ../../../src/InputState.cpp:408 ../../../src/SDLInputState.cpp:668
-#: ../../../src/SDLInputState.cpp:698
-msgid "Up"
-msgstr ""
-
-#: ../../../src/InputState.cpp:409 ../../../src/SDLInputState.cpp:646
-#: ../../../src/SDLInputState.cpp:676
-msgid "Down"
-msgstr ""
-
-#: ../../../src/InputState.cpp:410 ../../../src/SDLInputState.cpp:653
-#: ../../../src/SDLInputState.cpp:683
-msgid "Left"
-msgstr ""
-
-#: ../../../src/InputState.cpp:411 ../../../src/SDLInputState.cpp:663
-#: ../../../src/SDLInputState.cpp:693
-msgid "Right"
-msgstr ""
-
-#: ../../../src/InputState.cpp:412
-msgid "Bar1"
-msgstr ""
-
-#: ../../../src/InputState.cpp:413
-msgid "Bar2"
-msgstr ""
-
-#: ../../../src/InputState.cpp:414
-msgid "Bar3"
-msgstr ""
-
-#: ../../../src/InputState.cpp:415
-msgid "Bar4"
-msgstr ""
-
-#: ../../../src/InputState.cpp:416
-msgid "Bar5"
-msgstr ""
-
-#: ../../../src/InputState.cpp:417
-msgid "Bar6"
-msgstr ""
-
-#: ../../../src/InputState.cpp:418
-msgid "Bar7"
-msgstr ""
-
-#: ../../../src/InputState.cpp:419
-msgid "Bar8"
-msgstr ""
-
-#: ../../../src/InputState.cpp:420
-msgid "Bar9"
-msgstr ""
-
-#: ../../../src/InputState.cpp:421
-msgid "Bar0"
-msgstr ""
-
-#: ../../../src/InputState.cpp:422 ../../../src/MenuActionBar.cpp:82
-#: ../../../src/MenuCharacter.cpp:54
-msgid "Character"
-msgstr ""
-
-#: ../../../src/InputState.cpp:423 ../../../src/MenuActionBar.cpp:83
-#: ../../../src/MenuInventory.cpp:129 ../../../src/MenuVendor.cpp:57
-msgid "Inventory"
-msgstr ""
-
-#: ../../../src/InputState.cpp:424 ../../../src/MenuActionBar.cpp:84
-#: ../../../src/MenuPowers.cpp:167
-msgid "Powers"
-msgstr ""
-
-#: ../../../src/InputState.cpp:425 ../../../src/MenuActionBar.cpp:85
-#: ../../../src/MenuLog.cpp:72
-msgid "Log"
-msgstr ""
-
-#: ../../../src/InputState.cpp:426
-msgid "Main1"
-msgstr ""
-
-#: ../../../src/InputState.cpp:427
-msgid "Main2"
-msgstr ""
-
-#: ../../../src/InputState.cpp:428
-msgid "Ctrl"
-msgstr ""
-
-#: ../../../src/InputState.cpp:429
-msgid "Shift"
-msgstr ""
-
-#: ../../../src/InputState.cpp:430
-msgid "Alt"
-msgstr ""
-
-#: ../../../src/InputState.cpp:431 ../../../src/SDLInputState.cpp:675
-msgid "Delete"
-msgstr ""
-
-#: ../../../src/InputState.cpp:432
-msgid "ActionBar Accept"
-msgstr ""
-
-#: ../../../src/InputState.cpp:433
-msgid "ActionBar Left"
-msgstr ""
-
-#: ../../../src/InputState.cpp:434
-msgid "ActionBar Right"
-msgstr ""
-
-#: ../../../src/InputState.cpp:435
-msgid "ActionBar Use"
-msgstr ""
-
-#: ../../../src/InputState.cpp:436
-msgid "Developer Menu"
-msgstr ""
-
-#: ../../../src/InputState.cpp:438
-msgid "Left Mouse"
-msgstr ""
-
-#: ../../../src/InputState.cpp:439
-msgid "Middle Mouse"
-msgstr ""
-
-#: ../../../src/InputState.cpp:440
-msgid "Right Mouse"
-msgstr ""
-
-#: ../../../src/InputState.cpp:441
-msgid "Wheel Up"
-msgstr ""
-
-#: ../../../src/InputState.cpp:442
-msgid "Wheel Down"
-msgstr ""
-
-#: ../../../src/InputState.cpp:443
-msgid "Mouse X1"
-msgstr ""
-
-#: ../../../src/InputState.cpp:444
-msgid "Mouse X2"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:480 ../../../src/ItemManager.cpp:483
-msgid "Unknown Item"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:678 ../../../src/MenuPowers.cpp:886
+#: PlatformAndroid.org:163 PlatformAndroid.cpp:162
 #, c-format
-msgid "%d%% Speed"
+msgid "Platform: Android external storage unavailable: %s"
 msgstr ""
 
-#: ../../../src/ItemManager.cpp:682 ../../../src/MenuPowers.cpp:889
+#: PlatformAndroid.org:189 PlatformAndroid.cpp:189
+msgid "Platform: Unable to create Android .nomedia file."
+msgstr ""
+
+#: MenuStatBar.cpp:122
 #, c-format
-msgid "%d%% Attack Speed"
+msgid "MenuStatBar: '%s' is not a valid key."
 msgstr ""
 
-#: ../../../src/ItemManager.cpp:704 ../../../src/MenuCharacter.cpp:354
-#: ../../../src/MenuPowers.cpp:832
+#: MenuStatBar.cpp:260
 #, c-format
-msgid "Resistance (%s)"
+msgid "HP: %d/%d"
 msgstr ""
 
-#: ../../../src/ItemManager.cpp:714
+#: MenuStatBar.cpp:264
 #, c-format
-msgid "Requires %s"
+msgid "MP: %d/%d"
 msgstr ""
 
-#: ../../../src/ItemManager.cpp:763
-msgid "Quest Item"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:790
-#, c-format
-msgid "Quality: %s"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:815
-#, c-format
-msgid "Absorb: %d-%d"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:817
-#, c-format
-msgid "Absorb: %d"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:857 ../../../src/MenuPowers.cpp:1130
-#: ../../../src/MenuPowers.cpp:1133
-#, c-format
-msgid "Requires Level %d"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:868 ../../../src/MenuPowers.cpp:1122
-#: ../../../src/MenuPowers.cpp:1124
-#, c-format
-msgid "Requires %s %d"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:879
-#, c-format
-msgid "Requires Class: %s"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:894 ../../../src/ItemManager.cpp:906
-#, c-format
-msgid "Buy Price: %d %s"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:896 ../../../src/ItemManager.cpp:908
-#, c-format
-msgid "Buy Price: %d %s each"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:916
-#, c-format
-msgid "Sell Price: %d %s"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:918
-#, c-format
-msgid "Sell Price: %d %s each"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:927
-msgid "Set:"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:934
-#, c-format
-msgid "%d items:"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:947 ../../../src/ItemManager.cpp:953
-#, c-format
-msgid "Press [%s] to use"
-msgstr ""
-
-#: ../../../src/ItemManager.cpp:951
-#, c-format
-msgid "Press [%s] to read"
-msgstr ""
-
-#: ../../../src/MenuActionBar.cpp:226 ../../../src/MenuActionBar.cpp:233
-#: ../../../src/MenuActionBar.cpp:236 ../../../src/MenuActionBar.cpp:242
-#, c-format
-msgid "Hotkey: %s"
-msgstr ""
-
-#: ../../../src/MenuActionBar.cpp:599
-msgid "Not enough MP."
-msgstr ""
-
-#: ../../../src/MenuActiveEffects.cpp:124
-#, c-format
-msgid "x%d"
-msgstr ""
-
-#: ../../../src/MenuActiveEffects.cpp:219
-msgid "Remaining:"
-msgstr ""
-
-#: ../../../src/MenuActiveEffects.cpp:225
-#, c-format
-msgid "x%d stacks"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:73 ../../../src/MenuCharacter.cpp:78
-msgid "Name"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:74 ../../../src/MenuCharacter.cpp:79
-msgid "Level"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:310
-#, c-format
-msgid "%d unspent stat point"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:313
-#, c-format
-msgid "%d unspent stat points"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:355
-#, c-format
-msgid "Reduces the damage taken from \"%s\" elemental attacks."
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:365 ../../../src/MenuManager.cpp:292
-#, c-format
-msgid "XP: %d"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:367
-#, c-format
-msgid "Next: %d"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:373
-#, c-format
-msgid "base (%d), bonus (%d)"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:381 ../../../src/MenuCharacter.cpp:395
-msgid "Related stats:"
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:421 ../../../src/MenuCharacter.cpp:445
-#, c-format
-msgid "Each level grants %d."
-msgstr ""
-
-#: ../../../src/MenuCharacter.cpp:425 ../../../src/MenuCharacter.cpp:449
-#, c-format
-msgid "Each point of %s grants %d."
-msgstr ""
-
-#: ../../../src/MenuConfig.cpp:122 ../../../src/MenuConfig.cpp:1163
+#: MenuConfig.cpp:122 MenuConfig.cpp:1163
 msgid "Clear"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:122 ../../../src/MenuConfig.cpp:1161
+#: MenuConfig.cpp:122 MenuConfig.cpp:1161
 msgid "Assign:"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:123 ../../../src/MenuConfig.cpp:243
+#: MenuConfig.cpp:123 MenuConfig.cpp:243
 msgid "Defaults"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:123
+#: MenuConfig.cpp:123
 msgid "Reset ALL settings?"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:242 ../../../src/MenuNumPicker.cpp:49
-msgid "OK"
-msgstr ""
-
-#: ../../../src/MenuConfig.cpp:246
+#: MenuConfig.cpp:246 Utils.cpp:823 MenuGameOver.cpp:72
 msgid "Continue"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:248
+#: MenuConfig.cpp:239 MenuNumPicker.cpp:49
+msgid "OK"
+msgstr ""
+
+#: MenuConfig.cpp:248
 msgid "Save Game"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:291
+#: MenuConfig.cpp:291
 msgid "Default"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:291
+#: MenuConfig.cpp:291
 msgid ""
 "Show all loot tooltips, except for those that would be obscured by the "
 "player or an enemy. Temporarily show all loot tooltips with 'Alt'."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:292
+#: MenuConfig.cpp:292
 msgid "Show all"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:292
+#: MenuConfig.cpp:292
 msgid ""
 "Always show loot tooltips. Temporarily hide all loot tooltips with 'Alt'."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:293 ../../../src/MenuConfig.cpp:298
+#: MenuConfig.cpp:293 MenuConfig.cpp:298
 msgid "Hidden"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:293
+#: MenuConfig.cpp:293
 msgid ""
 "Always hide loot tooltips, except for when a piece of loot is hovered with "
 "the mouse cursor. Temporarily show all loot tooltips with 'Alt'."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:296
+#: MenuConfig.cpp:296
 msgid "Visible"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:297
+#: MenuConfig.cpp:297
 msgid "Visible (2x zoom)"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:301
+#: MenuConfig.cpp:301
 msgid ""
 "Controls the type of warning to be activated when the player is below the "
 "low health threshold."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:302
+#: MenuConfig.cpp:302
 msgid "- Display a message"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:303
+#: MenuConfig.cpp:303
 msgid "- Play a sound"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:304
+#: MenuConfig.cpp:304
 msgid "- Change the cursor"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:306
+#: MenuConfig.cpp:306
 msgid "Disabled"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:307
+#: MenuConfig.cpp:307
 msgid "All"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:308
+#: MenuConfig.cpp:308
 msgid "Message & Cursor"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:309
+#: MenuConfig.cpp:309
 msgid "Message & Sound"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:310
+#: MenuConfig.cpp:310
 msgid "Sound & Cursor"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:311
+#: MenuConfig.cpp:311
 msgid "Message"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:312
+#: MenuConfig.cpp:312
 msgid "Cursor"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:313
+#: MenuConfig.cpp:313
 msgid "Sound"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:319
+#: MenuConfig.cpp:319
 msgid ""
 "When the player's health drops below the given threshold, the low health "
 "notifications are triggered if one or more of them is enabled."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:332 ../../../src/MenuConfig.cpp:1579
+#: MenuConfig.cpp:332 MenuConfig.cpp:1579 MenuGameOver.cpp:116
 msgid "Exit"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:333
+#: MenuConfig.cpp:333
 msgid "Video"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:334
+#: MenuConfig.cpp:334
 msgid "Audio"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:335
+#: MenuConfig.cpp:335
 msgid "Interface"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:336
+#: MenuConfig.cpp:336
 msgid "Input"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:337
+#: MenuConfig.cpp:337
 msgid "Keybindings"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:338
+#: MenuConfig.cpp:338
 msgid "Mods"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:350
+#: MenuConfig.cpp:350
 msgid "Paused"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:353
+#: MenuConfig.cpp:353
 msgid "Time Played"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:359
+#: MenuConfig.cpp:359
 msgid "Renderer"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:360
+#: MenuConfig.cpp:360
 msgid "Full Screen Mode"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:361
+#: MenuConfig.cpp:361
 msgid "Hardware surfaces"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:362
+#: MenuConfig.cpp:362
 msgid "V-Sync"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:363
+#: MenuConfig.cpp:363
 msgid "Texture Filtering"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:364
+#: MenuConfig.cpp:364
 msgid "DPI scaling"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:365
+#: MenuConfig.cpp:365
 msgid "Parallax Layers"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:366
+#: MenuConfig.cpp:366
 msgid "Allow changing gamma"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:367
+#: MenuConfig.cpp:367
 msgid "Gamma"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:369
+#: MenuConfig.cpp:369
 msgid "Sound Volume"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:370
+#: MenuConfig.cpp:370
 msgid "Music Volume"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:372
+#: MenuConfig.cpp:372
 msgid "Language"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:373
+#: MenuConfig.cpp:373
 msgid "Show FPS"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:374
+#: MenuConfig.cpp:374
 msgid "Hardware mouse cursor"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:375
+#: MenuConfig.cpp:375
 msgid "Colorblind Mode"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:376
+#: MenuConfig.cpp:376
 msgid "Developer Mode"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:377
+#: MenuConfig.cpp:377
 msgid "Subtitles"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:378
+#: MenuConfig.cpp:378
 msgid "Loot tooltip visibility"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:379
+#: MenuConfig.cpp:379
 msgid "Mini-map mode"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:380
+#: MenuConfig.cpp:380
 msgid "Always show stat bar labels"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:381
+#: MenuConfig.cpp:381
 msgid "Allow stat bar auto-hiding"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:382
+#: MenuConfig.cpp:382
 msgid "Show combat text"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:383
+#: MenuConfig.cpp:383
 msgid "Automatically equip items"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:384
+#: MenuConfig.cpp:384
 msgid "Show hidden entity markers"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:385
+#: MenuConfig.cpp:385
 msgid "Low health notification"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:386
+#: MenuConfig.cpp:386
 msgid "Low health threshold"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:389
+#: MenuConfig.cpp:389 MenuMovementType.cpp:94 MenuMovementType.cpp:131
 msgid "Joystick"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:390
+#: MenuConfig.cpp:390
 msgid "Move hero using mouse"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:391
+#: MenuConfig.cpp:391
 msgid "Mouse aim"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:392
+#: MenuConfig.cpp:392
 msgid "Do not use mouse"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:393
+#: MenuConfig.cpp:393
 msgid "Swap mouse movement button"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:394
+#: MenuConfig.cpp:394
 msgid "Attack with mouse movement"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:395
+#: MenuConfig.cpp:395
 msgid "Joystick Deadzone"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:405
+#: MenuConfig.cpp:405
 #, c-format
 msgid "Primary binding: %s"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:406
+#: MenuConfig.cpp:406
 #, c-format
 msgid "Alternate binding: %s"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:407
+#: MenuConfig.cpp:407
 #, c-format
 msgid "Joystick binding: %s"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:508
+#: MenuConfig.cpp:502
+#, c-format
+msgid "MenuConfig: '%s' is not a valid key."
+msgstr ""
+
+#: MenuConfig.cpp:508
 msgid ""
 "Will try to store surfaces in video memory versus system memory. The effect "
 "this has on performance depends on the renderer."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:509
+#: MenuConfig.cpp:509
 msgid ""
 "Prevents screen tearing. Disable if you experience \"stuttering\" in "
 "windowed mode or input lag."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:510
+#: MenuConfig.cpp:510
 msgid ""
 "When enabled, this uses the screen DPI in addition to the window dimensions "
 "to scale the rendering resolution. Otherwise, only the window dimensions are "
 "used."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:511
+#: MenuConfig.cpp:511
 msgid ""
 "This enables parallax (non-tile) layers. Disabling this setting can improve "
 "performance in some cases."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:512
+#: MenuConfig.cpp:512
 msgid ""
 "Enables the below setting that controls the screen gamma level. The behavior "
 "of the gamma setting can vary between platforms."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:513
+#: MenuConfig.cpp:513
 msgid ""
 "Provides additional text for information that is primarily conveyed through "
 "color."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:514
+#: MenuConfig.cpp:514
 msgid ""
 "Some mods will automatically hide the stat bars when they are inactive. "
 "Disabling this option will keep them displayed at all times."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:515
+#: MenuConfig.cpp:515
 msgid ""
 "When enabled, empty equipment slots will be filled with applicable items "
 "when they are obtained."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:516
+#: MenuConfig.cpp:516
 msgid ""
 "Shows a marker above enemies, allies, and the player when they are obscured "
 "by tall objects."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:517
+#: MenuConfig.cpp:517
 msgid ""
 "This allows the game to be controlled entirely with the keyboard (or "
 "joystick)."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:518
+#: MenuConfig.cpp:518
 msgid ""
 "When 'Move hero using mouse' is enabled, this setting controls if 'Main1' or "
 "'Main2' is used to move the hero. If enabled, 'Main2' will move the hero "
 "instead of 'Main1'."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:519
+#: MenuConfig.cpp:519
 msgid ""
 "When 'Move hero using mouse' is enabled, this setting controls if the Power "
 "assigned to the movement button can be used by targeting an enemy. If this "
@@ -951,940 +1532,2059 @@ msgid ""
 "assigned to the movement button."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:520
+#: MenuConfig.cpp:520
 msgid ""
 "The player's attacks will be aimed in the direction of the mouse cursor when "
 "this is enabled."
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:571
+#: MenuConfig.cpp:571
 msgid "Active Mods"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:580
+#: MenuConfig.cpp:580
 msgid "Available Mods"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:599
+#: MenuConfig.cpp:599
 msgid "<< Disable"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:605
+#: MenuConfig.cpp:605
 msgid "Enable >>"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:1436
+#: MenuConfig.cpp:1420
 msgid "Version:"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:1441
+#:  MenuConfig.cpp:1425
 msgid "Game:"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:1446
+#: MenuConfig.cpp:1430
 msgid "Engine version:"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:1454
+#: MenuConfig.cpp:1438
 msgid "Requires mods:"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:1562 ../../../src/SDLInputState.cpp:748
+#: MenuConfig.cpp:1562 SDLInputState.cpp:748
 msgid "(none)"
 msgstr ""
 
-#: ../../../src/MenuConfig.cpp:1579
+#: MenuConfig.cpp:1579 MenuGameOver.cpp:73
 msgid "Save & Exit"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:63
+#: Animation.cpp:61
+#, c-format
+msgid "Animation: Type %s is unknown"
+msgstr ""
+
+#: Animation.cpp:156
+#, c-format
+msgid ""
+"Animation: Animation(%s) adding rect(%d, %d, %d, %d) to frame index(%u) out "
+"of bounds. must be in [0, %d]"
+msgstr ""
+
+#: Animation.cpp:161
+#, c-format
+msgid ""
+"Animation: Animation(%s) adding rect(%d, %d, %d, %d) to frame(%u) kind(%u) "
+"out of bounds. must be in [0, %d]"
+msgstr ""
+
+#: Animation.cpp:274
+#, c-format
+msgid ""
+"Animation: '%s' animation has no frames, but current frame index is greater "
+"than 0."
+msgstr ""
+
+#: Animation.cpp:280
+#, c-format
+msgid ""
+"Animation: Current frame index (%d) was larger than the last frame index "
+"(%d) when syncing '%s' animation."
+msgstr ""
+
+#: WidgetTooltip.cpp:162
+msgid "WidgetTooltip: Could not create tooltip buffer."
+msgstr ""
+
+#: MenuCharacter.cpp:73 MenuCharacter.cpp:78
+msgid "Name"
+msgstr ""
+
+#: MenuCharacter.cpp:74 MenuCharacter.cpp:79
+msgid "Level"
+msgstr ""
+
+#: MenuCharacter.cpp:128 MenuCharacter.cpp:155 MenuCharacter.cpp:180
+#, c-format
+msgid "MenuCharacter: '%s' is not a valid primary stat."
+msgstr ""
+
+#: MenuCharacter.cpp:214
+#, c-format
+msgid "MenuCharacter: '%s' is not a valid key."
+msgstr ""
+
+#: MenuCharacter.cpp:310
+#, c-format
+msgid "%d unspent stat point"
+msgstr ""
+
+#: MenuCharacter.cpp:313
+#, c-format
+msgid "%d unspent stat points"
+msgstr ""
+
+#: MenuCharacter.cpp:355
+#, c-format
+msgid "Reduces the damage taken from \"%s\" elemental attacks."
+msgstr ""
+
+#: MenuCharacter.cpp:365 MenuManager.cpp:295
+#, c-format
+msgid "XP: %d"
+msgstr ""
+
+#: MenuCharacter.cpp:367
+#, c-format
+msgid "Next: %d"
+msgstr ""
+
+#: MenuCharacter.cpp:373
+#, c-format
+msgid "base (%d), bonus (%d)"
+msgstr ""
+
+#: MenuCharacter.cpp:381 MenuCharacter.cpp:395
+msgid "Related stats:"
+msgstr ""
+
+#: MenuCharacter.cpp:421 MenuCharacter.cpp:445
+#, c-format
+msgid "Each level grants %d."
+msgstr ""
+
+#: MenuCharacter.cpp:425 MenuCharacter.cpp:449
+#, c-format
+msgid "Each point of %s grants %d."
+msgstr ""
+
+#: GameState.cpp:37 GameState.cpp:58
+msgid "Loading..."
+msgstr ""
+
+#: FileParser.cpp:56
+#, c-format
+msgid "FileParser: Could not open text file: %s: No such file or directory!"
+msgstr ""
+
+#: FileParser.cpp:96 FileParser.cpp:206
+#, c-format
+msgid "FileParser: Could not open text file: %s"
+msgstr ""
+
+#: FontEngine.cpp:74
+#, c-format
+msgid "FontEngine: %s is not a valid key."
+msgstr ""
+
+#: FontEngine.cpp:237
+#, c-format
+msgid "FontEngine::position() given unhandled 'justify=%d', assuming left"
+msgstr ""
+
+#: MenuStash.cpp:53
+msgid "Private"
+msgstr ""
+
+#: MenuStash.cpp:55
+msgid "Shared"
+msgstr ""
+
+#: MenuStash.cpp:97
+#, c-format
+msgid "MenuStash: '%s' is not a valid key."
+msgstr ""
+
+#: MenuStash.cpp:103
+msgid "Stash"
+msgstr ""
+
+#: MenuStash.cpp:258
+msgid "This item can not be stored in the stash."
+msgstr ""
+
+#: MenuStash.cpp:259
+msgid "Can not store quest items in the stash."
+msgstr ""
+
+#: MenuStash.cpp:263
+msgid "This item can not be stored in the private stash."
+msgstr ""
+
+#: MenuStash.cpp:268
+msgid "This item can not be stored in the shared stash."
+msgstr ""
+
+#: MenuStash.cpp:278
+msgid "Stash is full."
+msgstr ""
+
+#: MenuStash.cpp:335
+#, c-format
+msgid "Can not store item in stash: %s"
+msgstr ""
+
+#: MapRenderer.cpp:168
+#, c-format
+msgid ""
+"MapRenderer: Could not spawn all enemies in group at %s (x=%d,y=%d,w=%d,h="
+"%d), %d missing (min=%d max=%d)"
+msgstr ""
+
+#: MapRenderer.cpp:212
+msgid "MapRenderer: Map width is 0. Can't set collision layer."
+msgstr ""
+
+#: MapRenderer.cpp:247
+msgid ""
+"MapRenderer: Tileset or Map corrupted. A tile has a larger id than the "
+"tileset allows or is undefined."
+msgstr ""
+
+#: MapRenderer.cpp:249
+#, c-format
+msgid "MapRenderer: Removing offending tile id %d."
+msgstr ""
+
+#: MapRenderer.cpp:1091
+#, c-format
+msgid "MapRenderer: Power index %d is not valid."
+msgstr ""
+
+#: MapRenderer.cpp:1103
+msgid "MapRenderer: StatBlock index is out of bounds."
+msgstr ""
+
+#: GameStateNew.cpp:69
+msgid "Create"
+msgstr ""
+
+#: GameStateNew.cpp:77
+msgid "Randomize"
+msgstr ""
+
+#: GameStateNew.cpp:93
+msgid "Choose a Portrait"
+msgstr ""
+
+#: GameStateNew.cpp:97
+msgid "Choose a Name"
+msgstr ""
+
+#: GameStateNew.cpp:101
+msgid "Permadeath?"
+msgstr ""
+
+#: GameStateNew.cpp:105
+msgid "Choose a Class"
+msgstr ""
+
+#: GameStateNew.cpp:219
+#, c-format
+msgid "GameStateNew: '%s' is not a valid key."
+msgstr ""
+
+#: QuestLog.cpp:152
+#, c-format
+msgid "QuestLog: %s is not a valid key."
+msgstr ""
+
+#: QuestLog.cpp:234
+msgid "Completed Quests"
+msgstr ""
+
+#: CombatText.cpp:87
+#, c-format
+msgid "CombatText: '%s' is not a valid key."
+msgstr ""
+
+#: NPC.cpp:249
+#, c-format
+msgid "NPC: '%s' is not a valid key."
+msgstr ""
+
+#: NPC.cpp:274
+#, c-format
+msgid "[%s] NPC: Dialog node %d does not have a topic."
+msgstr ""
+
+#: AnimationManager.cpp:38 AnimationManager.cpp:39
+#, c-format
+msgid "AnimationManager::getAnimationSet(): %s not found"
+msgstr ""
+
+#: AnimationManager.cpp:54
+msgid "AnimationManager: Still holding these animations:"
+msgstr ""
+
+#: AnimationManager.cpp:84 AnimationManager.cpp:85
+#, c-format
+msgid "AnimationManager::decreaseCount(): %s not found"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:222
+#, c-format
+msgid "Using Render Device: SDLHardwareRenderDevice (hardware, SDL 2, %s)"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:235 SDLSoftwareRenderDevice.cpp:203
+#, c-format
+msgid "RenderDevice: %d display(s), using display 0 (%dx%d @ %dhz)"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:313 SDLSoftwareRenderDevice.cpp:281
+#, c-format
+msgid "RenderDevice: Window size is %dx%d"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:323 SDLSoftwareRenderDevice.cpp:291
+#, c-format
+msgid ""
+"RenderDevice: Fullscreen=%d, Hardware surfaces=%d, Vsync=%d, Texture Filter="
+"%d"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:327 SDLSoftwareRenderDevice.cpp:295
+#, c-format
+msgid "RenderDevice: Display DPI is %f"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:329 SDLSoftwareRenderDevice.cpp:297
+msgid ""
+"RenderDevice: The SDL version used to compile Flare does not support "
+"SDL_GetDisplayDPI(). The virtual_dpi setting will be ignored."
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:367 SDLHardwareRenderDevice.cpp:368
+#, c-format
+msgid "SDLHardwareRenderDevice: createContext() failed: %s"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:553
+#, c-format
+msgid "SDLHardwareRenderDevice: SDL_CreateTexture failed: %s"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:607
+#, c-format
+msgid "SDLHardwareRenderDevice: Couldn't load image: '%s'. %s"
+msgstr ""
+
+#: SDLHardwareRenderDevice.cpp:610
+#, c-format
+msgid ""
+"SDLHardwareRenderDevice: Couldn't load image: '%s'.\n"
+"%s"
+msgstr ""
+
+#: CampaignManager.cpp:153
+#, c-format
+msgid "%d %s removed."
+msgstr ""
+
+#: CampaignManager.cpp:165
+#, c-format
+msgid "%s x%d removed."
+msgstr ""
+
+#: CampaignManager.cpp:162
+#, c-format
+msgid "%s removed.."
+msgstr ""
+
+#: CampaignManager.cpp:167
+#, c-format
+msgid "%s removed."
+msgstr ""
+
+#: CampaignManager.cpp:180
+#, c-format
+msgid "You receive %s."
+msgstr ""
+
+#: CampaignManager.cpp:182
+#, c-format
+msgid "You receive %s x%d."
+msgstr ""
+
+#: CampaignManager.cpp:191
+#, c-format
+msgid "You receive %d %s."
+msgstr ""
+
+#: CampaignManager.cpp:200
+#, c-format
+msgid "You receive %d XP."
+msgstr ""
+
+#: CampaignManager.cpp:206
+msgid "HP restored."
+msgstr ""
+
+#: CampaignManager.cpp:210
+msgid "MP restored."
+msgstr ""
+
+#: CampaignManager.cpp:215
+msgid "HP and MP restored."
+msgstr ""
+
+#: CampaignManager.cpp:217
+msgid "status"
+msgstr ""
+
+#: CampaignManager.cpp:219
+msgid "Negative effects removed."
+msgstr ""
+
+#: CampaignManager.cpp:225
+msgid "HP and MP restored, negative effects removed"
+msgstr ""
+
+#: MenuHUDLog.cpp:64
+#, c-format
+msgid "MenuHUDLog: '%s' is not a valid key."
+msgstr ""
+
+#: MenuVendor.cpp:58
+msgid "Buyback"
+msgstr ""
+#: MenuVendor.cpp:91
+#, c-format
+msgid "MenuVendor: '%s' is not a valid key."
+msgstr ""
+
+#: MenuVendor.cpp:281
+msgid "Vendor"
+msgstr ""
+
+#: EnemyManager.cpp:79 EnemyManager.cpp:296
+#, c-format
+msgid "EnemyManager: No animation file specified for entity: %s"
+msgstr ""
+
+#: EnemyManager.cpp:147
+#, c-format
+msgid "EnemyManager: Enemy(%f, %f) doesn't have type attribute set, skipping"
+msgstr ""
+
+#: EnemyManager.cpp:281
+#, c-format
+msgid "EnemyManager: Could not spawn creature type '%s'"
+msgstr ""
+
+#: EnemyManager.cpp:293
+#, c-format
+msgid "EnemyManager: Animations file could not be loaded for %s"
+msgstr ""
+
+#: ItemStorage.cpp:65
+#, c-format
+msgid "ItemStorage: Item on position %d has negative id, skipping"
+msgstr ""
+
+#: ItemStorage.cpp:69
+#, c-format
+msgid "ItemStorage: Item id (%d) has no name, marking as unknown"
+msgstr ""
+
+#: ItemStorage.cpp:82
+#, c-format
+msgid "ItemStorage: Items quantity on position %d is negative, setting to zero"
+msgstr ""
+
+#: ItemStorage.cpp:295
+#, c-format
+msgid "ItemStorage: Removing item with id %d, which has a quantity of 0"
+msgstr ""
+
+#: ItemStorage.cpp:299
+#, c-format
+msgid "ItemStorage: Removing item with id 0, which has a quantity of %d"
+msgstr ""
+
+#: SaveLoad.cpp:207
+msgid "SaveLoad: Unable to save the game. No write access or disk is full!"
+msgstr ""
+
+#: SaveLoad.cpp:229
+msgid "SaveLoad: Unable to save stash. No write access or disk is full!"
+msgstr ""
+
+#: SaveLoad.cpp:252
+msgid "SaveLoad: Unable to save shared stash. No write access or disk is full!"
+msgstr ""
+
+#: SaveLoad.cpp:263 SaveLoad.cpp:264
+msgid "Game saved."
+msgstr ""
+
+#: SaveLoad.cpp:287 GameStateLoad.cpp:353 EngineSettings.cpp:652
+msgid "permadeath"
+msgstr ""
+
+#: SaveLoad.cpp:310
+#, c-format
+msgid ""
+"SaveLoad: Primary stat value for '%s' is out of bounds, setting to zero."
+msgstr ""
+
+#: SaveLoad.cpp:340
+#, c-format
+msgid "SaveLoad: Unable to find %s, loading maps/spawn.txt"
+msgstr ""
+
+#: SaveLoad.cpp:351
+#, c-format
+msgid "SaveLoad: Hotkey power on position %d has negative id, skipping"
+msgstr ""
+
+#: SaveLoad.cpp:355
+#, c-format
+msgid ""
+"SaveLoad: Hotkey power with id=%d, found on position %d does not exist, "
+"skipping"
+msgstr ""
+
+#: SaveLoad.cpp:397
+#, c-format
+msgid "SaveLoad: Unable to open %s!"
+msgstr ""
+
+#: SaveLoad.cpp:418
+msgid "SaveLoad: HP value is out of bounds, setting to maximum"
+msgstr ""
+
+#: SaveLoad.cpp:424
+msgid "SaveLoad: MP value is out of bounds, setting to maximum"
+msgstr ""
+
+#: SaveLoad.cpp:435
+#, c-format
+msgid ""
+"SaveLoad: Warning! Engine version of save file (%s) does not match current "
+"engine version (%s). Be on the lookout for bugs."
+msgstr ""
+
+#: SaveLoad.cpp:453
+msgid "SaveLoad: Class index out of bounds."
+msgstr ""
+
+#: SaveLoad.cpp:513
+#, c-format
+msgid ""
+"SaveLoad: Could not open stash file '%s'. This may be because it hasn't been "
+"created yet."
+msgstr ""
+
+#: SaveLoad.cpp:530
+#, c-format
+msgid ""
+"SaveLoad: Could not open shared stash file '%s'. This may be because it "
+"hasn't been created yet."
+msgstr ""
+
+#: EnemyGroupManager.cpp:82
+#, c-format
+msgid ""
+"EnemyGroupManager: Could not find enemy category %s, returning empty enemy"
+msgstr ""
+
+#: EnemyGroupManager.cpp:104
+#, c-format
+msgid ""
+"EnemyGroupManager: 'rarity' property for enemy '%s' not valid (common|"
+"uncommon|rare): %s"
+msgstr ""
+
+#: EnemyGroupManager.cpp:116
+#, c-format
+msgid ""
+"EnemyGroupManager: Could not find a suitable enemy category for (%s, %d, %d)"
+msgstr ""
+
+#: EnemyGroupManager.cpp:127
+#, c-format
+msgid ""
+"EnemyGroupManager: Could not find enemy category %s, returning empty enemy "
+"list"
+msgstr ""
+
+#: ModManager.cpp:138
+msgid "Active mods: "
+msgstr ""
+
+#: ModManager.cpp:185
+msgid ""
+"ModManager: Error during loadModList() -- couldn't open mods.txt, to be "
+"located at:"
+msgstr ""
+
+#: ModManager.cpp:206 ModManager.cpp:224
+#, c-format
+msgid "ModManager: Mod \"%s\" not found, skipping"
+msgstr ""
+
+#: ModManager.cpp:231
+msgid ""
+"ModManager: Couldn't locate any Flare mod. Check if the game data are "
+"installed                   correctly. Expected to find the data in the "
+"$XDG_DATA_DIRS path, in \t\t\t\t  /usr/local/share/flare/mods, or in the "
+"same folder as the executable. \t\t\t\t  Try placing the mods folder in one "
+"of these locations."
+msgstr ""
+
+#: ModManager.cpp:411
+#, c-format
+msgid "ModManager: Mod '%s' contains invalid key: '%s'"
+msgstr ""
+
+#: ModManager.cpp:442
+#, c-format
+msgid ""
+"ModManager: Tried to enable \"%s\", but failed. Game does not match \"%s\"."
+msgstr ""
+
+#: ModManager.cpp:448
+#, c-format
+msgid ""
+"ModManager: Tried to enable \"%s\", but failed. Not compatible with engine "
+"version %s."
+msgstr ""
+
+#: ModManager.cpp:472
+#, c-format
+msgid ""
+"ModManager: Tried to enable dependency \"%s\" for \"%s\", but failed. Game "
+"does not match \"%s\"."
+msgstr ""
+
+#: ModManager.cpp:477
+#, c-format
+msgid ""
+"ModManager: Tried to enable dependency \"%s\" for \"%s\", but failed. Not "
+"compatible with engine version %s."
+msgstr ""
+
+#: ModManager.cpp:482
+#, c-format
+msgid ""
+"ModManager: Tried to enable dependency \"%s\" for \"%s\", but failed. "
+"Version \"%s\" is required, but only version \"%s\" is available."
+msgstr ""
+
+#: ModManager.cpp:492
+#, c-format
+msgid "ModManager: Mod \"%s\" requires the \"%s\" mod. Enabling \"%s\" now."
+msgstr ""
+
+#: ModManager.cpp:499
+#, c-format
+msgid ""
+"ModManager: Could not find mod \"%s\", which is required by mod \"%s\". "
+"Disabling \"%s\" now."
+msgstr ""
+
+#: ModManager.cpp:538
+msgid ""
+"# Mods lower on the list will overwrite data in the entries higher on the "
+"list"
+msgstr ""
+
+#: ModManager.cpp:547
+msgid ""
+"GameStateConfig: Unable to save mod list into file. No write access or disk "
+"is full!"
+msgstr ""
+
+#: ModManager.cpp:558
+#, c-format
+msgid ""
+"ModManager: Game data is either missing or misconfigured. Deleting '%s' in "
+"attempt to recover."
+msgstr ""
+
+#: CursorManager.cpp:120
+#, c-format
+msgid "CursorManager: '%s' is not a valid key."
+msgstr ""
+
+#: PowerManager.cpp:256
+#, c-format
+msgid "PowerManager: '%s' is not a valid key."
+msgstr ""
+
+#: PowerManager.cpp:296
+#, c-format
+msgid "PowerManager: Power index out of bounds 1-%d, skipping power."
+msgstr ""
+
+#: PowerManager.cpp:309
+#, c-format
+msgid "PowerManager: Unknown type '%s'"
+msgstr ""
+
+#: PowerManager.cpp:344
+#, c-format
+msgid "PowerManager: Unknown source_type '%s'"
+msgstr ""
+
+#: PowerManager.cpp:362
+#, c-format
+msgid "PowerManager: Unknown passive trigger '%s'"
+msgstr ""
+
+#: PowerManager.cpp:417
+msgid "PowerManager: Only 1 equipped item can be consumed at a time."
+msgstr ""
+
+#: PowerManager.cpp:455 PowerManager.cpp:469
+#, c-format
+msgid ""
+"PowerManager: '%s' is not a valid hp/mp state. Use 'percent', 'not_percent', "
+"or 'ignore'."
+msgstr ""
+
+#: PowerManager.cpp:480
+msgid "PowerManager: 'hp' has been deprecated. Use 'all' or 'any'."
+msgstr ""
+
+#: PowerManager.cpp:488
+msgid "PowerManager: 'mp' has been deprecated. Use 'any' or 'all'."
+msgstr ""
+
+#: PowerManager.cpp:498
+msgid "PowerManager: Please specify 'any' or 'all'."
+msgstr ""
+
+#: PowerManager.cpp:556
+msgid "PowerManager: Attack speeds less than 100 are unsupported."
+msgstr ""
+
+#: PowerManager.cpp:583
+#, c-format
+msgid "PowerManager: Unknown base_damage '%s'"
+msgstr ""
+
+#: PowerManager.cpp:591
+#, c-format
+msgid "PowerManager: Unknown starting_pos '%s'"
+msgstr ""
+
+#: PowerManager.cpp:617
+#, c-format
+msgid "PowerManager: Unknown movement_type '%s'"
+msgstr ""
+
+#: PowerManager.cpp:694
+#, c-format
+msgid "PowerManager: Unknown effect '%s'"
+msgstr ""
+
+#: PowerManager.cpp:751
+#, c-format
+msgid "PowerManager: Unknown spawn_limit_mode '%s'"
+msgstr ""
+
+#: PowerManager.cpp:766 PowerManager.cpp:794
+#, c-format
+msgid "PowerManager: '%s' is not a valid primary stat."
+msgstr ""
+
+#: PowerManager.cpp:778
+#, c-format
+msgid "PowerManager: Unknown spawn_level_mode '%s'"
+msgstr ""
+
+#: PowerManager.cpp:817 PowerManager.cpp:827 PowerManager.cpp:838
+#, c-format
+msgid "PowerManager: Unknown stat_modifier_mode '%s'"
+msgstr ""
+
+#: PowerManager.cpp:864
+#, c-format
+msgid "PowerManager: Unknown script trigger '%s'"
+msgstr ""
+
+#: PowerManager.cpp:908
+#, c-format
+msgid "PowerManager: '%s' is not a valid key"
+msgstr ""
+
+#: PowerManager.cpp:1210
+#, c-format
+msgid "+%d Shield"
+msgstr ""
+
+#: PowerManager.cpp:1226 Entity.cpp:560 StatBlock.cpp:879 StatBlock.cpp:885
+#, c-format
+msgid "+%d HP"
+msgstr ""
+
+#: PowerManager.cpp:1467
+msgid "You are already transformed, untransform first."
+msgstr ""
+
+#: PowerManager.cpp:1479
+msgid "Could not untransform at this position."
+msgstr ""
+
+#: PowerManager.cpp:1775 PowerManager.cpp:1777
+#, c-format
+msgid "PowerManager: %d is not a valid power id."
+msgstr ""
+
+#: RenderDevice.cpp:183
+msgid "RenderDevice: createContext() failed, trying previous settings."
+msgstr ""
+
+#: RenderDevice.cpp:194
+msgid "RenderDevice: createContext() failed, disabling all options."
+msgstr ""
+
+#: RenderDevice.cpp:216
+msgid "RenderDevice: Image cache still holding these images:"
+msgstr ""
+
+#: RenderDevice.cpp:362
+#, c-format
+msgid "RenderDevice: Internal render size is %dx%d"
+msgstr ""
+
+#: RenderDevice.cpp:365
+#, c-format
+msgid "RenderDevice: Window size changed to %dx%d"
+msgstr ""
+
+#: RenderDevice.cpp:371
+#, c-format
+msgid "RenderDevice: Trying to set background color to (%d,%d,%d,%d)."
+msgstr ""
+
+#: RenderDevice.cpp:372
+msgid "RenderDevice: Renderer does not support setting background color!"
+msgstr ""
+
+#: RenderDevice.cpp:376
+#, c-format
+msgid ""
+"RenderDevice: Trying to set fullscreen=%d, without recreating the rendering "
+"context, but setFullscreen() is not implemented for this renderer."
+msgstr ""
+
+#: MenuActiveEffects.cpp:61
+#, c-format
+msgid "MenuActiveEffects: '%s' is not a valid key."
+msgstr ""
+
+#: MenuActiveEffects.cpp:124
+#, c-format
+msgid "x%d"
+msgstr ""
+
+#: MenuActiveEffects.cpp:219
+msgid "Remaining:"
+msgstr ""
+
+#: MenuActiveEffects.cpp:225
+#, c-format
+msgid "x%d stacks"
+msgstr ""
+
+#: MessageEngine.cpp:38
+#, c-format
+msgid "MessageEngine: Using language '%s'"
+msgstr ""
+
+#: MessageEngine.cpp:42
+msgid "languages/engine."
+msgstr ""
+
+#: MessageEngine.cpp:44
+#, c-format
+msgid ""
+"MessageEngine: Unable to open basic translation files located in languages/"
+"engine.%s.po"
+msgstr ""
+
+#: MessageEngine.cpp:58
+#, c-format
+msgid ""
+"MessageEngine: Unable to open basic translation files located in languages/"
+"data.%s.po"
+msgstr ""
+
+#: GameStateLoad.cpp:90 GameStateLoad.cpp:103
+msgid "Delete Save"
+msgstr ""
+
+#: GameStateLoad.cpp:90
+msgid "Delete this save?"
+msgstr ""
+
+#: GameStateLoad.cpp:92
+msgid "Exit to Title"
+msgstr ""
+
+#: GameStateLoad.cpp:95
+msgid "New Game"
+msgstr ""
+
+#: GameStateLoad.cpp:99 GameStateLoad.cpp:608
+msgid "Choose a Slot"
+msgstr ""
+
+#: GameStateLoad.cpp:202
+#, c-format
+msgid "GameStateLoad: '%s' is not a valid key."
+msgstr ""
+
+#: GameStateLoad.cpp:408
+#, c-format
+msgid ""
+"GameStateLoad: Item in save slot %d with id=%d is unknown. Your savegame is "
+"broken or you might be using an incompatible savegame/mod"
+msgstr ""
+
+#: GameStateLoad.cpp:581 GameStateLoad.cpp:602
+msgid "Enable a story mod to continue"
+msgstr ""
+
+#: GameStateLoad.cpp:597
+msgid "Load Game"
+msgstr ""
+
+#: GameStateLoad.cpp:706
+msgid "Entering game world..."
+msgstr ""
+
+#: GameStateLoad.cpp:709
+msgid "Loading saved game..."
+msgstr ""
+
+#: GameStateLoad.cpp:742
+msgid "Invalid save"
+msgstr ""
+
+#: MenuMiniMap.cpp:127
+#, c-format
+msgid "MenuMiniMap: '%s' is not a valid key."
+msgstr ""
+
+#: MenuMiniMap.cpp:152 GameStateTitle.cpp:114
+msgid "Configuration"
+msgstr ""
+
+#: MenuLog.cpp:66
+#, c-format
+msgid "MenuLog: '%s' is not a valid key."
+msgstr ""
+
+#: MenuLog.cpp:91
+msgid "Notes"
+msgstr ""
+
+#: MenuLog.cpp:92
+msgid "Quests"
+msgstr ""
+
+#: GameStatePlay.cpp:331
+#, c-format
+msgid "GameStatePlay: Spawn position (%d, %d) is blocked."
+msgstr ""
+
+#: GameStatePlay.cpp:370
+msgid "GameStatePlay: Teleport position is outside of map bounds."
+msgstr ""
+
+#: GameStatePlay.cpp:511
+#, c-format
+msgid "GameStatePlay: '%s' is not a valid key."
+msgstr ""
+
+#: GameStatePlay.cpp:949
+msgid ""
+"GameStatePlay: Untransform power not found, you can't untransform manually"
+msgstr ""
+
+#: GameStateTitle.cpp:101
+#, c-format
+msgid "GameStateTitle: '%s' is not a valid key."
+msgstr ""
+
+#: GameStateTitle.cpp:107
+msgid "Play Game"
+msgstr ""
+
+#: GameStateTitle.cpp:110
+msgid "Enable a core mod to continue"
+msgstr ""
+
+#: GameStateTitle.cpp:117
+msgid "Credits"
+msgstr ""
+
+#: GameStateTitle.cpp:120
+msgid "Exit Game"
+msgstr ""
+
+#: MenuManager.cpp:299
+#, c-format
+msgid "XP: %d/%d"
+msgstr ""
+
+#: MenuManager.cpp:868
+msgid "This item can not be dropped."
+msgstr ""
+
+#: MenuDevConsole.cpp:63
 msgid "Execute"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:101 ../../../src/MenuDevConsole.cpp:151
+#: MenuDevConsole.cpp:96
+#, c-format
+msgid "MenuDevConsole: '%s' is not a valid key."
+msgstr ""
+
+#: MenuDevConsole.cpp:101 MenuDevConsole.cpp:151
 msgid "Developer Console"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:141
+#: MenuDevConsole.cpp:141
 #, c-format
 msgid "Use '%s' to inspect with the cursor."
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:146
+#: MenuDevConsole.cpp:144
+msgid "exec \"msg=Hello World\""
+msgstr ""
+
+#: MenuDevConsole.cpp:146
 msgid "Arguments with spaces should be enclosed with double quotes. Example:"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:147
+#: MenuDevConsole.cpp:147
 msgid "Type 'help' to get a list of commands."
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:209 ../../../src/MenuDevConsole.cpp:213
-msgid "px"
-msgstr ""
-
-#: ../../../src/MenuDevConsole.cpp:224
+#: MenuDevConsole.cpp:224
 msgid "Distance"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:239 ../../../src/MenuDevConsole.cpp:286
+#: MenuDevConsole.cpp:239 MenuDevConsole.cpp:286
 msgid "Entity"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:261 ../../../src/MenuDevConsole.cpp:268
+#: MenuDevConsole.cpp:259
+msgid "collision="
+msgstr ""
+
+#: MenuDevConsole.cpp:261 MenuDevConsole.cpp:268
 msgid "none"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:262 ../../../src/MenuDevConsole.cpp:264
+#: MenuDevConsole.cpp:262 MenuDevConsole.cpp:264
 msgid "wall"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:263 ../../../src/MenuDevConsole.cpp:265
+#: MenuDevConsole.cpp:263 MenuDevConsole.cpp:265
 msgid "short wall / pit"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:266
+#: MenuDevConsole.cpp:266
 msgid "entity"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:267
+#: MenuDevConsole.cpp:267
 msgid "entity, ally"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:274
+#: MenuDevConsole.cpp:274
 msgid "Tile"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:360
+#: MenuDevConsole.cpp:360
 msgid "adds a power to the action bar"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:361
+#: MenuDevConsole.cpp:361
 msgid "turns on/off the display of the FPS counter"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:362
+#: MenuDevConsole.cpp:362
 msgid "turns on/off all of the HUD elements"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:363
+#: MenuDevConsole.cpp:363
 msgid "turns on/off the developer hud"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:364
+#: MenuDevConsole.cpp:364
 msgid ""
 "Prints a list of powers that match a search term. No search term will list "
 "all items"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:365
+#: MenuDevConsole.cpp:365
 msgid "Prints out all the map filenames located in the \"maps/\" directory."
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:366
+#: MenuDevConsole.cpp:366
 msgid ""
 "Prints out the active campaign statuses that match a search term. No search "
 "term will list all active statuses"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:367
+#: MenuDevConsole.cpp:367
 msgid ""
 "Prints a list of items that match a search term. No search term will list "
 "all items"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:368
+#: MenuDevConsole.cpp:368
 msgid "parses a series of event components and executes them as a single event"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:369
+#: MenuDevConsole.cpp:369
 msgid "clears the command history"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:370
+#: MenuDevConsole.cpp:370
 msgid "displays this text"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:377
+#: MenuDevConsole.cpp:377
 msgid "Toggled the developer hud"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:381
+#: MenuDevConsole.cpp:381
 msgid "Toggled the hud"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:385
+#: MenuDevConsole.cpp:385
 msgid "Toggled the FPS counter"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:534
+#: MenuDevConsole.cpp:535
 msgid "ERROR: Incorrect number of arguments"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:536 ../../../src/MenuDevConsole.cpp:564
+#: MenuDevConsole.cpp:537 MenuDevConsole.cpp:565
 msgid "HINT:"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:536
+#: MenuDevConsole.cpp:537
 msgid "<id>"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:552
+#: MenuDevConsole.cpp:553
 #, c-format
 msgid "ERROR: '%s' is not a valid event key"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:562
+#: MenuDevConsole.cpp:563
 msgid "ERROR: Too few arguments"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:564
-msgid "<key>=<val> <key>=<val> ..."
-msgstr ""
-
-#: ../../../src/MenuDevConsole.cpp:569
+#: MenuDevConsole.cpp:570
 msgid "ERROR: Unknown command"
 msgstr ""
 
-#: ../../../src/MenuDevConsole.cpp:571
+#: MenuDevConsole.cpp:572
 msgid "HINT: Type help"
 msgstr ""
 
-#: ../../../src/MenuEnemy.cpp:162
+#: Avatar.cpp:200 Avatar.cpp:201
+msgid "Avatar: Hero layer direction must be in range [0,7]"
+msgstr ""
+
+#: Avatar.cpp:220
 #, c-format
-msgid "%s level %d"
+msgid "Avatar: '%s' is not a valid key."
 msgstr ""
 
-#: ../../../src/MenuEnemy.cpp:186
-msgid "Dead"
-msgstr ""
-
-#: ../../../src/MenuEnemy.cpp:188
-msgid "Destroyed"
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:177
+#: Avatar.cpp:251
 #, c-format
-msgid "Lost %d%% of %s."
+msgid "Avatar: Error syncing animation in '%s' to 'animations/hero.txt'."
 msgstr ""
 
-#: ../../../src/MenuInventory.cpp:184
+#: Avatar.cpp:288
+msgid "Avatar loading foot steps"
+msgstr ""
+
+#: Avatar.cpp:295
 #, c-format
-msgid "Lost %d%% of total XP."
+msgid "Avatar: Could not find footstep sounds for '%s'."
 msgstr ""
 
-#: ../../../src/MenuInventory.cpp:189
+#: Avatar.cpp:389
+msgid "Your health is low!"
+msgstr ""
+
+#: Avatar.cpp:421
 #, c-format
-msgid "Lost %d%% of current level XP."
+msgid "Congratulations, you have reached level %d!"
 msgstr ""
 
-#: ../../../src/MenuInventory.cpp:215
+#: Avatar.cpp:423
+msgid "You may increase one or more attributes through the Character Menu."
+msgstr ""
+
+#: Avatar.cpp:427
+msgid "You may unlock one or more abilities through the Powers Menu."
+msgstr ""
+
+#: Avatar.cpp:688
+msgid "You are defeated. Game over! ${INPUT_CONTINUE} to exit to Title."
+msgstr ""
+
+#: Avatar.cpp:694
+msgid "You are defeated. ${INPUT_CONTINUE} to continue."
+msgstr ""
+
+#: Avatar.cpp:690
+msgid "You are defeated."
+msgstr ""
+
+#: Avatar.cpp:898
 #, c-format
-msgid "Lost %s."
+msgid "Avatar: Could not transform into creature type '%s'"
 msgstr ""
 
-#: ../../../src/MenuInventory.cpp:257 ../../../src/MenuStash.cpp:194
+#: Avatar.cpp:959
+msgid "Transformation expired. You have been moved back to a safe place."
+msgstr ""
+
+#: Version.h:48 EngineSettings.cpp:57 Utils.cpp:830 Flare.rc:50 Flare.rc:62
+#: Flare.rc:65 Flare.rc:74 Flare.rc:77 Flare.rc:86
+msgid "Flare"
+msgstr ""
+
+#: SDLInputState.cpp:68
 #, c-format
-msgid "%d %s"
+msgid "InputState: %d joystick(s) found."
 msgstr ""
 
-#: ../../../src/MenuInventory.cpp:300
-msgid "Pick up item(s):"
+#: SDLInputState.cpp:72
+msgid "InputState: No joysticks were found."
 msgstr ""
 
-#: ../../../src/MenuInventory.cpp:301
-msgid "Use or equip item:"
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:302
+#: SDLInputState.cpp:78
 #, c-format
-msgid "%s modifiers"
+msgid "InputState: Joystick %d, %s"
 msgstr ""
 
-#: ../../../src/MenuInventory.cpp:303
-msgid "Select a quantity of item:"
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:306
-msgid "Stash item stack:"
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:308
-msgid "Sell item stack:"
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:574
-msgid "You don't have enough of the required item."
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:586
-msgid "You can't use this item right now."
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:598
-msgid "This item can only be used from the action bar."
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:716
-msgid "Inventory is full."
-msgstr ""
-
-#: ../../../src/MenuInventory.cpp:841
+#: SDLInputState.cpp:92
 #, c-format
-msgid "Not enough %s."
+msgid "InputState: Using joystick %d."
 msgstr ""
 
-#: ../../../src/MenuInventory.cpp:861 ../../../src/MenuInventory.cpp:868
-msgid "This item can not be sold."
+#: SDLInputState.cpp:279
+msgid "InputState: Minimizing app, saving..."
 msgstr ""
 
-#: ../../../src/MenuLog.cpp:91
-msgid "Notes"
+#: SDLInputState.cpp:281
+msgid "InputState: Game saved"
 msgstr ""
 
-#: ../../../src/MenuLog.cpp:92
-msgid "Quests"
+#: SDLInputState.cpp:558
+msgid "InputState: Joystick added."
 msgstr ""
 
-#: ../../../src/MenuManager.cpp:296
-#, c-format
-msgid "XP: %d/%d"
+#: SDLInputState.cpp:564
+msgid "InputState: Joystick removed."
 msgstr ""
 
-#: ../../../src/MenuManager.cpp:854
-msgid "This item can not be dropped."
-msgstr ""
-
-#: ../../../src/MenuNumPicker.cpp:59
-msgid "Enter amount:"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:786
-msgid "Passive"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:791
-#, c-format
-msgid "Costs %d MP"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:795
-#, c-format
-msgid "Costs %d HP"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:800
-msgid "Cooldown:"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:865 ../../../src/MenuPowers.cpp:868
-msgid "Damage per second"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:871 ../../../src/MenuPowers.cpp:874
-msgid "HP per second"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:877 ../../../src/MenuPowers.cpp:880
-msgid "MP per second"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:884
-msgid "Immobilize"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:892
-msgid "Immunity"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:895
-msgid "Immunity to damage over time"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:898
-msgid "Immunity to slow"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:901
-msgid "Immunity to stun"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:904
-msgid "Immunity to HP steal"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:907
-msgid "Immunity to MP steal"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:910
-msgid "Immunity to knockback"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:913
-msgid "Immunity to damage reflection"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:916
-msgid "Stun"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:919
-msgid "Automatic revive on death"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:922
-msgid "Convert"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:925
-msgid "Fear"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:928
-msgid "Lifespan"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:952
-msgid "Magical Shield"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:981
-msgid "Healing"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:984
-msgid "Knockback"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1009
-#, c-format
-msgid "%d%% chance"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1061
-msgid "Base Accuracy"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1081
-msgid "Base Critical Chance"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1089
-msgid "Ignores Absorbtion"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1094
-msgid "Ignores Avoidance"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1099
-#, c-format
-msgid "%d%% Chance to crit slowed targets"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1104
-#, c-format
-msgid "Elemental Damage (%s)"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1113
-#, c-format
-msgid "Requires a %s"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1150 ../../../src/MenuPowers.cpp:1153
-#, c-format
-msgid "Requires Power: %s"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1162
-msgid "Click to Unlock (uses 1 Skill Point)"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1166 ../../../src/MenuPowers.cpp:1168
-msgid "Requires 1 Skill Point"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1354
-#, c-format
-msgid "%d unspent skill point"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1357
-#, c-format
-msgid "%d unspent skill points"
-msgstr ""
-
-#: ../../../src/MenuPowers.cpp:1387
-msgid "Next Level:"
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:53
-msgid "Private"
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:55
-msgid "Shared"
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:103
-msgid "Stash"
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:258
-msgid "Can not store quest items in the stash."
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:263
-msgid "This item can not be stored in the stash."
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:268
-msgid "This item can not be stored in the private stash."
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:273
-msgid "This item can not be stored in the shared stash."
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:283
-msgid "Stash is full."
-msgstr ""
-
-#: ../../../src/MenuStash.cpp:340
-#, c-format
-msgid "Can not store item in stash: %s"
-msgstr ""
-
-#: ../../../src/MenuTalker.cpp:447
-#, c-format
-msgid "<dialog node %d>"
-msgstr ""
-
-#: ../../../src/MenuTalker.cpp:455
-msgid "Trade"
-msgstr ""
-
-#: ../../../src/MenuVendor.cpp:58
-msgid "Buyback"
-msgstr ""
-
-#: ../../../src/MenuVendor.cpp:281
-msgid "Vendor"
-msgstr ""
-
-#: ../../../src/PowerManager.cpp:1170
-#, c-format
-msgid "+%d Shield"
-msgstr ""
-
-#: ../../../src/PowerManager.cpp:1426
-msgid "You are already transformed, untransform first."
-msgstr ""
-
-#: ../../../src/PowerManager.cpp:1438
-msgid "Could not untransform at this position."
-msgstr ""
-
-#: ../../../src/QuestLog.cpp:234
-msgid "Completed Quests"
-msgstr ""
-
-#: ../../../src/SaveLoad.cpp:263 ../../../src/SaveLoad.cpp:264
-msgid "Game saved."
-msgstr ""
-
-#: ../../../src/SDLInputState.cpp:643
+#: Key Name on keyboard
+#: SDLInputState.cpp:643
 msgid "BkSp"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:644
+#: SDLInputState.cpp:644
 msgid "Caps"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:645
+#: SDLInputState.cpp:645
 msgid "Del"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:647 ../../../src/SDLInputState.cpp:677
+#: SDLInputState.cpp:647 SDLInputState.cpp:677
 msgid "End"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:648
+#: SDLInputState.cpp:648
 msgid "Esc"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:649 ../../../src/SDLInputState.cpp:679
+#: SDLInputState.cpp:649 SDLInputState.cpp:679
 msgid "Home"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:650
+#: SDLInputState.cpp:650
 msgid "Ins"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:651
+#: SDLInputState.cpp:651
 msgid "LAlt"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:652
+#: SDLInputState.cpp:652
 msgid "LCtrl"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:654
+#: SDLInputState.cpp:654
 msgid "LShft"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:655
+#: SDLInputState.cpp:655
 msgid "Num"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:656
+#: SDLInputState.cpp:656
 msgid "PgDn"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:657
+#: SDLInputState.cpp:657
 msgid "PgUp"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:658 ../../../src/SDLInputState.cpp:688
+#: SDLInputState.cpp:658 SDLInputState.cpp:688
 msgid "Pause"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:659
+#: SDLInputState.cpp:659
 msgid "Print"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:660
+#: SDLInputState.cpp:660
 msgid "RAlt"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:661
+#: SDLInputState.cpp:661
 msgid "RCtrl"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:662
+#: SDLInputState.cpp:662
 msgid "Ret"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:664
+#: SDLInputState.cpp:664
 msgid "RShft"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:665
+#: SDLInputState.cpp:665
 msgid "SLock"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:666
+#: SDLInputState.cpp:666
 msgid "Spc"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:667 ../../../src/SDLInputState.cpp:697
+#: SDLInputState.cpp:667 SDLInputState.cpp:697
 msgid "Tab"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:673
+#: SDLInputState.cpp:673
 msgid "Backspace"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:674
+#: SDLInputState.cpp:674
 msgid "CapsLock"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:678
+#: SDLInputState.cpp:678
 msgid "Escape"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:680
+#: SDLInputState.cpp:680
 msgid "Insert"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:681
+#: SDLInputState.cpp:681
 msgid "Left Alt"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:682
+#: SDLInputState.cpp:682
 msgid "Left Ctrl"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:684
+#: SDLInputState.cpp:684
 msgid "Left Shift"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:685
+#: SDLInputState.cpp:685
 msgid "NumLock"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:686
+#: SDLInputState.cpp:686
 msgid "PageDown"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:687
+#: SDLInputState.cpp:687
 msgid "PageUp"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:689
+#: SDLInputState.cpp:689
 msgid "PrintScreen"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:690
+#: SDLInputState.cpp:690
 msgid "Right Alt"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:691
+#: SDLInputState.cpp:691
 msgid "Right Ctrl"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:692
+#: SDLInputState.cpp:692
 msgid "Return"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:694
+#: SDLInputState.cpp:694
 msgid "Right Shift"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:695
+#: SDLInputState.cpp:695
 msgid "ScrollLock"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:696
+#: SDLInputState.cpp:696
 msgid "Space"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:710
-#, c-format
-msgid "M%d"
-msgstr ""
-
-#: ../../../src/SDLInputState.cpp:716
+#: SDLInputState.cpp:716
 #, c-format
 msgid "Mouse %d"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:726
-#, c-format
-msgid "JX%d-"
-msgstr ""
-
-#: ../../../src/SDLInputState.cpp:728
+#: SDLInputState.cpp:728
 #, c-format
 msgid "Axis %d -"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:732
-#, c-format
-msgid "JX%d+"
-msgstr ""
-
-#: ../../../src/SDLInputState.cpp:734
+#: SDLInputState.cpp:734
 #, c-format
 msgid "Axis %d +"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:739
-#, c-format
-msgid "JB%d"
-msgstr ""
-
-#: ../../../src/SDLInputState.cpp:741
+#: SDLInputState.cpp:741
 #, c-format
 msgid "Button %d"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:788
+#: SDLInputState.cpp:788
 msgid "Touch control D-Pad"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:812
+#: SDLInputState.cpp:812
 msgid "Touch control buttons"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:827
+#: SDLInputState.cpp:827
 msgid "Tap"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:879 ../../../src/SDLInputState.cpp:881
+#: SDLInputState.cpp:879 SDLInputState.cpp:881
 #, c-format
 msgid "Can not bind: %s"
 msgstr ""
 
-#: ../../../src/SDLInputState.cpp:893 ../../../src/SDLInputState.cpp:897
-#: ../../../src/SDLInputState.cpp:901
+#: SDLInputState.cpp:893 SDLInputState.cpp:897 SDLInputState.cpp:901
 #, c-format
 msgid "'%s' is no longer bound to:"
 msgstr ""
 
-#: ../../../src/Stats.cpp:38
+#: EngineSettings.cpp:116
+#, c-format
+msgid ""
+"EngineSettings: Currency ID below the minimum allowed value. Resetting it to "
+"%d"
+msgstr ""
+
+#: EngineSettings.cpp:159 EngineSettings.cpp:238 EngineSettings.cpp:266
+#: EngineSettings.cpp:336 EngineSettings.cpp:368 EngineSettings.cpp:405
+#: EngineSettings.cpp:442 EngineSettings.cpp:558 EngineSettings.cpp:628
+#: EngineSettings.cpp:662 EngineSettings.cpp:697 EngineSettings.cpp:761
+#: EngineSettings.cpp:797
+#, c-format
+msgid "EngineSettings: '%s' is not a valid key."
+msgstr ""
+
+#: EngineSettings.cpp:165
+msgid ""
+"EngineSettings: save_prefix not found in engine/misc.txt, setting to "
+"'default'. This may cause save file conflicts between games that have no "
+"save_prefix."
+msgstr ""
+
+#: EngineSettings.cpp:170
+msgid ""
+"EngineSettings: Warning, save_buyback=true is ignored when "
+"keep_buyback_on_map_change=false."
+msgstr ""
+
+#: EngineSettings.cpp:214
+msgid "EngineSettings: virtual_height must be greater than zero."
+msgstr ""
+
+#: EngineSettings.cpp:249
+msgid "EngineSettings: icon_size is undefined. Setting it to 32."
+msgstr ""
+
+#: EngineSettings.cpp:516
+#, c-format
+msgid "EngineSettings: '%s' is not a valid primary stat."
+msgstr ""
+
+#: EngineSettings.cpp:561
+msgid "Adventurer"
+msgstr ""
+
+#: EngineSettings.cpp:708
+msgid "Gold"
+msgstr ""
+
+#: EngineSettings.cpp:803
+msgid ""
+"Unable to open engine/tileset_config.txt! Defaulting to 64x32 isometric "
+"tiles."
+msgstr ""
+
+#: EngineSettings.cpp:813 EngineSettings.cpp:824
+msgid ""
+"EngineSettings: Tile dimensions must be greater than 0. Resetting to the "
+"default size of 64x32."
+msgstr ""
+
+#: EngineSettings.cpp:830 EngineSettings.cpp:831
+#, c-format
+msgid "EngineSettings: One of UNITS_PER_PIXEL values is zero! %dx%d"
+msgstr ""
+
+#: EngineSettings.cpp:940
+msgid "EngineSettings: No XP table defined."
+msgstr ""
+
+#: MenuEnemy.cpp:79
+#, c-format
+msgid "MenuEnemy: '%s' is not a valid key."
+msgstr ""
+
+#: MenuEnemy.cpp:162
+#, c-format
+msgid "%s level %d"
+msgstr ""
+
+#: MenuEnemy.cpp:186
+msgid "Dead"
+msgstr ""
+
+#: MenuEnemy.cpp:188
+msgid "Destroyed"
+msgstr ""
+
+#: Utils.cpp:462 Utils.cpp:524
+#, c-format
+msgid "INFO: "
+msgstr ""
+
+#: Utils.cpp:489 Utils.cpp:526
+#, c-format
+msgid "ERROR: "
+msgstr ""
+
+#: Utils.cpp:500
+#, c-format
+
+#: Utils.cpp:500
+msgid "FLARE Error\n"
+msgstr ""
+
+#: Utils.cpp:505
+msgid "FLARE Error"
+msgstr ""
+
+#: Utils.cpp:520
+#, c-format
+msgid ""
+"### Flare log file\n"
+"\n"
+msgstr ""
+
+#: Utils.cpp:539
+msgid "Utils: Could not create log file."
+msgstr ""
+
+#: Utils.cpp:631
+#, c-format
+msgid "%s second"
+msgstr ""
+
+#: Utils.cpp:634
+#, c-format
+msgid "%s seconds"
+msgstr ""
+
+#: Utils.cpp:667
+#, c-format
+msgid "'%s' is not a valid string variable name."
+msgstr ""
+
+#: Utils.cpp:805
+msgid "# Flare lock file. Counts instances of Flare"
+msgstr ""
+
+#: Utils.cpp:822
+msgid "Quit"
+msgstr ""
+
+#: Utils.cpp:824
+msgid "Reset"
+msgstr ""
+
+#: Utils.cpp:825
+msgid "Safe Video"
+msgstr ""
+
+#: Utils.cpp:831
+msgid ""
+"Flare is unable to launch properly. This may be because it did not exit "
+"properly, or because there is another instance running.\n"
+"\n"
+"If Flare crashed, it is recommended to try 'Safe Video' mode. This will try "
+"launching Flare with the minimum video settings.\n"
+"\n"
+"If Flare is already running, you may:\n"
+"- 'Quit' Flare (safe, recommended)\n"
+"- 'Continue' to launch another copy of Flare.\n"
+"- 'Reset' the counter which tracks the number of copies of Flare that are "
+"currently running.\n"
+"  If this dialog is shown every time you launch Flare, this option should "
+"fix it."
+msgstr ""
+
+#: Entity.cpp:105
+msgid "Entity attack"
+msgstr ""
+
+#: Entity.cpp:111
+msgid "Entity was hit"
+msgstr ""
+
+#: Entity.cpp:114
+msgid "Entity died"
+msgstr ""
+
+#: Entity.cpp:117
+msgid "Entity died from critical hit"
+msgstr ""
+
+#: Entity.cpp:120
+msgid "Entity blocked"
+msgstr ""
+
+#: Entity.cpp:124
+msgid "Entity leveled up"
+msgstr ""
+
+#: Entity.cpp:127
+msgid "Entity has low hp"
+msgstr ""
+
+#: Entity.cpp:260
+#, c-format
+msgid "Entity: '%s' was stuck and has been moved: (%g, %g) -> (%g, %g)"
+msgstr ""
+
+#: Entity.cpp:522
+msgid "miss"
+msgstr ""
+
+#: Entity.cpp:567 StatBlock.cpp:890 StatBlock.cpp:896
+#, c-format
+msgid "+%d MP"
+msgstr ""
+
+#: Entity.cpp:692
+#, c-format
+msgid "Entity::setAnimation(%s): not found"
+msgstr ""
+
+#: Stats.cpp:38
 msgid "Max HP"
 msgstr ""
 
-#: ../../../src/Stats.cpp:39
+#: Stats.cpp:39
 msgid "Total amount of HP."
 msgstr ""
 
-#: ../../../src/Stats.cpp:43
+#: Stats.cpp:43
 msgid "HP Regen"
 msgstr ""
 
-#: ../../../src/Stats.cpp:44
+#: Stats.cpp:44
 msgid "Ticks of HP regen per minute."
 msgstr ""
 
-#: ../../../src/Stats.cpp:48
+#: Stats.cpp:48
 msgid "Max MP"
 msgstr ""
 
-#: ../../../src/Stats.cpp:49
+#: Stats.cpp:49
 msgid "Total amount of MP."
 msgstr ""
 
-#: ../../../src/Stats.cpp:53
+#: Stats.cpp:53
 msgid "MP Regen"
 msgstr ""
 
-#: ../../../src/Stats.cpp:54
+#: Stats.cpp:54
 msgid "Ticks of MP regen per minute."
 msgstr ""
 
-#: ../../../src/Stats.cpp:58
+#: Stats.cpp:58
 msgid "Accuracy"
 msgstr ""
 
-#: ../../../src/Stats.cpp:59
+#: Stats.cpp:59
 msgid ""
 "Accuracy rating. The enemy's Avoidance rating is subtracted from this value "
 "to calculate your likeliness to land a direct hit."
 msgstr ""
 
-#: ../../../src/Stats.cpp:63
+#: Stats.cpp:63
 msgid "Avoidance"
 msgstr ""
 
-#: ../../../src/Stats.cpp:64
+#: Stats.cpp:64
 msgid ""
 "Avoidance rating. This value is subtracted from the enemy's Accuracy rating "
 "to calculate their likeliness to land a direct hit."
 msgstr ""
 
-#: ../../../src/Stats.cpp:68
+#: Stats.cpp:68
 msgid "Absorb Min"
 msgstr ""
 
-#: ../../../src/Stats.cpp:69 ../../../src/Stats.cpp:74
+#: Stats.cpp:69 Stats.cpp:74
 msgid "Reduces the amount of damage taken."
 msgstr ""
 
-#: ../../../src/Stats.cpp:73
+#: Stats.cpp:73
 msgid "Absorb Max"
 msgstr ""
 
-#: ../../../src/Stats.cpp:78
+#: Stats.cpp:78
 msgid "Critical Hit Chance"
 msgstr ""
 
-#: ../../../src/Stats.cpp:79
+#: Stats.cpp:79
 msgid "Chance for an attack to do extra damage."
 msgstr ""
 
-#: ../../../src/Stats.cpp:83
+#: Stats.cpp:83
 msgid "Bonus XP"
 msgstr ""
 
-#: ../../../src/Stats.cpp:84
+#: Stats.cpp:84
 msgid "Increases the XP gained per kill."
 msgstr ""
 
-#: ../../../src/Stats.cpp:88
+#: Stats.cpp:88
 #, c-format
 msgid "Bonus %s"
 msgstr ""
 
-#: ../../../src/Stats.cpp:89
+#: Stats.cpp:89
 #, c-format
 msgid "Increases the %s found per drop."
 msgstr ""
 
-#: ../../../src/Stats.cpp:93
+#: Stats.cpp:93
 msgid "Item Find Chance"
 msgstr ""
 
-#: ../../../src/Stats.cpp:94
+#: Stats.cpp:94
 msgid "Increases the chance that an enemy will drop an item."
 msgstr ""
 
-#: ../../../src/Stats.cpp:98
+#: Stats.cpp:98
 msgid "Stealth"
 msgstr ""
 
-#: ../../../src/Stats.cpp:99
+#: Stats.cpp:99
 msgid "Increases your ability to move undetected."
 msgstr ""
 
-#: ../../../src/Stats.cpp:103
+#: Stats.cpp:103
 msgid "Poise"
 msgstr ""
 
-#: ../../../src/Stats.cpp:104
+#: Stats.cpp:104
 msgid "Reduces your chance of stumbling when hit."
 msgstr ""
 
-#: ../../../src/Stats.cpp:108
+#: Stats.cpp:108
 msgid "Missile Reflect Chance"
 msgstr ""
 
-#: ../../../src/Stats.cpp:109
+#: Stats.cpp:109
 msgid "Increases your chance of reflecting missiles back at enemies."
 msgstr ""
 
-#: ../../../src/Stats.cpp:113
+#: Stats.cpp:113
 msgid "Damage Reflection"
 msgstr ""
 
-#: ../../../src/Stats.cpp:114
+#: Stats.cpp:114
 msgid "Deals a percentage of damage taken back to the attacker."
 msgstr ""
 
-#: ../../../src/Stats.cpp:118
+#: Stats.cpp:118
 msgid "HP Steal"
 msgstr ""
 
-#: ../../../src/Stats.cpp:119
+#: Stats.cpp:119
 msgid "Percentage of HP stolen per hit."
 msgstr ""
 
-#: ../../../src/Stats.cpp:123
+#: Stats.cpp:123
 msgid "MP Steal"
 msgstr ""
 
-#: ../../../src/Stats.cpp:124
+#: Stats.cpp:124
 msgid "Percentage of MP stolen per hit."
 msgstr ""
 
-#: ../../../src/Stats.cpp:128
+#: Stats.cpp:128
 msgid "Base HP"
 msgstr ""
 
-#: ../../../src/Stats.cpp:133
+#: Stats.cpp:133
 msgid "Base MP"
 msgstr ""
 
-#: ../../../src/Utils.cpp:346
-msgid "k"
+#: MenuGameOver.cpp:69
+msgid "Game Over"
 msgstr ""
 
-#: ../../../src/Utils.cpp:616
+#: StatBlock.cpp:269
 #, c-format
-msgid "%s second"
+msgid "StatBlock: '%s' is not a valid primary stat."
 msgstr ""
 
-#: ../../../src/Utils.cpp:619
+#: StatBlock.cpp:518
 #, c-format
-msgid "%s seconds"
+msgid "StatBlock: '%s' is not a valid enemy power type."
 msgstr ""
 
-#: ../../../src/Version.cpp:139
-msgid "or newer"
+#: StatBlock.cpp:570
+#, c-format
+msgid "StatBlock: Unknown combat style '%s'"
 msgstr ""
 
-#: ../../../src/Version.cpp:142
-msgid "or older"
+#: StatBlock.cpp:589 StatBlock.cpp:1019
+#, c-format
+msgid "StatBlock: '%s' is not a valid key."
+msgstr ""
+
+#: MenuTalker.cpp:123
+#, c-format
+msgid "MenuTalker: '%s' is not a valid key."
+msgstr ""
+
+#: MenuTalker.cpp:447
+#, c-format
+msgid "<dialog node %d>"
+msgstr ""
+
+#: MenuTalker.cpp:455
+msgid "Trade"
+msgstr ""
+
+#: MenuTalker.cpp:543
+msgid "MenuTalker: addAction() parameters are incompatible, skipping action."
+msgstr ""
+
+#: api/MapSaver.cpp:101
+msgid "MapSaver: Unable to save the map. No write access or disk is full!"
+msgstr ""
+
+#: api/MapSaver.cpp:110
+#, c-format
+msgid "MapSaver: Could not open %s for writing"
+msgstr ""
+
+#: TileSet.cpp:148
+#, c-format
+msgid "TileSet: '%s' is not a valid key."
+msgstr ""
+
+#: MenuActionBar.cpp:102
+msgid "MenuActionBar: Slot index must be in range 1-10."
+msgstr ""
+
+#: MenuActionBar.cpp:166
+#, c-format
+msgid "MenuActionBar: '%s' is not a valid tooltip_length setting."
+msgstr ""
+
+#: MenuActionBar.cpp:169
+#, c-format
+msgid "MenuActionBar: '%s' is not a valid key."
+msgstr ""
+
+#: MenuActionBar.cpp:195
+msgid "MenuActionBar unable to cast"
+msgstr ""
+
+#: MenuActionBar.cpp:239 MenuActionBar.cpp:246 MenuActionBar.cpp:249
+#: MenuActionBar.cpp:255
+#, c-format
+msgid "Hotkey: %s"
+msgstr ""
+
+#: MenuActionBar.cpp:621
+msgid "Not enough MP."
+msgstr ""
+
+#: MenuMovementType.cpp:87
+msgid "Select a Movement Type"
+msgstr ""
+
+#: MenuMovementType.cpp:89
+msgid "Can be changed later in the Configuration menu."
+msgstr ""
+
+#: MenuMovementType.cpp:92 MenuMovementType.cpp:122
+msgid "Keyboard"
+msgstr ""
+
+#: MenuMovementType.cpp:93 MenuMovementType.cpp:128
+msgid "Mouse"
+msgstr ""
+
+#: MenuMovementType.cpp:129
+msgid "Button"
+msgstr ""
+
+#: EffectManager.cpp:186
+#, c-format
+msgid "EffectManager: '%s' is not a valid effect type."
+msgstr ""
+
+#: GameStateCutscene.cpp:575
+#, c-format
+msgid "GameStateCutscene: Loading cutscene '%s'"
+msgstr ""
+
+#: GameStateCutscene.cpp:618 GameStateCutscene.cpp:656
+#: GameStateCutscene.cpp:682
+#, c-format
+msgid "GameStateCutscene: '%s' is not a valid key."
+msgstr ""
+
+#: GameStateCutscene.cpp:635
+#, c-format
+msgid "GameStateCutscene: '%d' is not a valid scaling type."
+msgstr ""
+
+#: GameStateCutscene.cpp:690
+#, c-format
+msgid "GameStateCutscene: '%s' is not a valid section."
+msgstr ""
+
+#: GameStateCutscene.cpp:698
+#, c-format
+msgid "GameStateCutscene: No scenes defined in cutscene file %s"
+msgstr ""
+
+#: SDLSoftwareRenderDevice.cpp:190
+#, c-format
+msgid "RenderDevice: Using SDLSoftwareRenderDevice (software, SDL 2, %s)"
+msgstr ""
+
+#: SDLSoftwareRenderDevice.cpp:210
+msgid "RenderDevice: Safe mode is enabled. Using minimum video settings."
+msgstr ""
+
+#: SDLSoftwareRenderDevice.cpp:335 SDLSoftwareRenderDevice.cpp:336
+#, c-format
+msgid "SDLSoftwareRenderDevice: createContext() failed: %s"
+msgstr ""
+
+#: SDLSoftwareRenderDevice.cpp:565
+#, c-format
+msgid "SDLSoftwareRenderDevice: CreateRGBSurface failed: %s"
+msgstr ""
+
+#: SDLSoftwareRenderDevice.cpp:613
+#, c-format
+msgid "SDLSoftwareRenderDevice: Couldn't load image: '%s'. %s"
+msgstr ""
+
+#: SDLSoftwareRenderDevice.cpp:616
+#, c-format
+msgid ""
+"SDLSoftwareRenderDevice: Couldn't load image: '%s'.\n"
+"%s"
+msgstr ""
+
+#: EventManager.cpp:122
+#, c-format
+msgid ""
+"EventManager: Event activation type '%s' unknown, change to \"on_trigger\" "
+"to suppress this warning."
+msgstr ""
+
+#: EventManager.cpp:179
+#, c-format
+msgid "EventManager: '%s' is not a valid key."
+msgstr ""
+
+#: EventManager.cpp:738
+msgid "Unknown destination"
+msgstr ""
+
+#: EventManager.cpp:798 EventManager.cpp:809
+#, c-format
+msgid "EventManager: Mapmod at position (%d, %d) is out of bounds 0-255."
+msgstr ""
+
+#: EventManager.cpp:803
+#, c-format
+msgid ""
+"EventManager: Mapmod at position (%d, %d) contains invalid tile id (%d)."
+msgstr ""
+
+#: EventManager.cpp:805
+#, c-format
+msgid "EventManager: Mapmod at position (%d, %d) is on an invalid layer."
+msgstr ""
+
+#: EventManager.cpp:830
+msgid "MapRenderer background soundfx"
+msgstr ""
+
+#: EventManager.cpp:1051
+msgid "EventManager: Calling a script from within itself is not allowed."
 msgstr ""

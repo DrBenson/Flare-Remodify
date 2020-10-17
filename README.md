@@ -29,7 +29,7 @@ Flare-Remodify -------------------> This project home.
  ┃            ┣━ lib64 -----------> SDL2 Library for Linux.
  ┃            ┣━ libSDL2-win-x86 -> SDL2 Library for Windows.
  ┃            ┣━ libSDL2-win-x64 -> SDL2 Library for Windows win32.
- ┃            ┗━ libSDL2-mac -----> SDL2 Library for macOS i686.
+ ┃            ┗━ libSDL2-mac -----> SDL2 Library for macOS.
  ┃
  ┗━┓dev --------------------------> Development source folder.
    ┗━━┳━ flare-engine ------------> Flare Action Roleplaying Engine(engine source code only).

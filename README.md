@@ -2,15 +2,33 @@
 **Flare** engind **_Remodify_** project.
 ```
 ┎──────────────────────────────────────┒
-┃       Remodify version: 1.1.0        ┃
+┃       Remodify version: 1.11.62      ┃
 ┠──────────────────────────────────────┨
 ┃     This remodify based on Flare     ┃
 ┃(Free Libre Action Roleplaying Engine)┃
 ┖──────────────────────────────────────┛
 ```
-  This is re-modify engine of flare game engine. Most are based on flare-engine source code.
+  This is re-modify engine of flare game engine. It is based on flare-engine source code.
 
-** Folder description **
+# Contribute
+* FLARE is the Free/Libre Action Roleplaying Engine. it's a game engine for action RPGs, not a game itself. FLARE can be installed in order to run games based on FLARE.
+* FLARE is a free game. This means that the source code is available to be studied, modified, and distributed. Most projects look for help with testing, documentation, graphics, etc., as well.
+
+# Engine
+* FLARE is an engine for one particular type of RPG: Singleplayer action RPGs from a isometric perspective (2.5D). It features many classic RPG mechanics: Attributes, skill levels, experience levels, abilities, mana, dialog systems, and so on.
+* In order to play games in FLARE, you need to download what the FLARE developers call “[mods](https://github.com/DrBenson/Flare-Remodify/tree/main/flare/mods)” (which can actually be full-blown games or a literal modification of an existing one). In the main menu you can enable or disable mods at will.
+Currently, the main game for FLARE is Flare: [Empyrean Campaign](https://github.com/DrBenson/Flare-Remodify/tree/main/flare/mods/empyrean_campaign).
+
+# Games for FLARE
+The main game for FLARE is Flare: Empyrean Campaign.
+On [Flarerpg.org](https://flarerpg.org) you can find more games, but as of June 2019, these are still incomplete or otherwise not (yet) noteworthy. We might eventually write more articles in this wiki if new games for FLARE pop into existence.
+
+# Flare: Empyrean Campaign
+* Flare: [Empyrean Campaign](https://github.com/DrBenson/Flare-Remodify/tree/main/flare/mods/empyrean_campaign) is an action RPG set in a medieval fantasy world in which the protagonist is banished into the land of Empyrean and must prove your worth to escape damnation.
+* In the beginning of the game, the player gets to choose what race the in-game character should have. Each race has different abilities and skills (such as Strength, Health, Magic and Stealth). As the player completes missions and defeat enemies, the character will receive experience-points and level up. Levelling up will allow the player to improve skills and abilities of the character.
+* By completing missions and looting dead enemies, the player will collect gold. This can be used to purchase new equipment, weapons and armour at different traders.
+
+# ** Folder description **
 ```
 Flare-Remodify -------------------> This project home.
 ━┓
@@ -51,9 +69,9 @@ The default mod contains the Liberation Sans font which is released under the SI
 
 The GNU Unifont font is released under GPL v2, with the exception that embedding the font in a document does not in itself bind that document to the terms of the GPL.
 
-# Flare-Remodify 1.1.0
+# Flare-Remodify 1.11.62
 
-The Flare Game [Re-Modify](https://github.com/DrBenson/Flare-Remodify) Based on [Flare](http://flarerpg.org) Fantasycore and Empyrean Campaign Engine v1.1.61.
+The Flare Game [Re-Modify](https://github.com/DrBenson/Flare-Remodify) Based on [Flare](https://flarerpg.org/index.php/2019/07/27/flare-1-11/) Flare-engine v1.11.61
 
 ## Command-line Options
 
